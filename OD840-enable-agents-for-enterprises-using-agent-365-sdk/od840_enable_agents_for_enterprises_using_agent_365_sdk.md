@@ -28,8 +28,6 @@ tags:
 - [Demo: GenSpark](#demo-genspark)
 - [Agent 365 Ecosystem](#agent-365-ecosystem)
 
-![00:00:06](../hover-notes-images/screenshot-01KWRP4JB87NFAQNNZ31YABE0T.png)
-[00:00:06](https://www.youtube.com/watch?v=_OtDAmR3vIk&t=6s)
 
 <a id="introduction"></a>
 ## Introduction
@@ -37,6 +35,9 @@ tags:
 **Jeremiah Follis:** Hi, I'm Jeremiah Follis, a PMM on Microsoft Security for AI team. And, today, we're talking about how to make any agent enterprise ready using Agent 365 SDK. And I'm joined here by Sunil Garg, and he's been leading the Agent 365 SDK work. And so, yeah, thanks for being here, Sunil.
 
 **Sunil Garg:** Yeah, thank you, Jeremiah. Nice to be here. Hi, everyone, I am Sunil Garg. I am a Product Manager on the Agent 365 team. I run the Agent 365 SDK and CLI.
+
+![00:00:06](../hover-notes-images/screenshot-01KWRP4JB87NFAQNNZ31YABE0T.png)
+[00:00:06](https://www.youtube.com/watch?v=_OtDAmR3vIk&t=6s)
 
 ![00:00:36](../hover-notes-images/screenshot-01KWRP5G31Y8JWWZBVVFKYGEG3.png)
 [00:00:36](https://www.youtube.com/watch?v=_OtDAmR3vIk&t=36s)
