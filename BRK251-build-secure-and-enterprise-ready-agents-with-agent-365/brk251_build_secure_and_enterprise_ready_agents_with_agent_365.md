@@ -11,6 +11,28 @@ tags:
   - youtube
 ---
 
+## Table of Contents
+
+- [Session Introduction by Neta Haiby](#session-introduction-by-neta-haiby)
+- [Integration with Microsoft Security Ecosystem and Third-Party Agents](#integration-with-microsoft-security-ecosystem-and-third-party-agents)
+- [Terminology - Agent Blueprint and Agent Identity](#terminology-agent-blueprint-and-agent-identity)
+- [Demo: Your Agent in Action with Agent 365 SDK](#demo-your-agent-in-action-with-agent-365-sdk)
+- [Demo: Unified activity monitoring and agent performance metrics](#demo-unified-activity-monitoring-and-agent-performance-metrics)
+- [Demo: Agent Map View](#demo-agent-map-view)
+- [Demo: Connected Agents View](#demo-connected-agents-view)
+- [Demo: Agents with Risks](#demo-agents-with-risks)
+- [Demo: Agents without Owners](#demo-agents-without-owners)
+- [Demo: Agent Management Rules](#demo-agent-management-rules)
+- [Demo: Policy Templates](#demo-policy-templates)
+- [Demo: Apply Policy Template while Publishing Agents](#demo-apply-policy-template-while-publishing-agents)
+- [Demo: Registry Sync Demonstration with Third-Party Platforms](#demo-registry-sync-demonstration-with-third-party-platforms)
+- [Demo: Shadow Agents](#demo-shadow-agents)
+- [Early Adopters](#early-adopters)
+- [Genspark Integration with Agent 365: Architecture and Security](#genspark-integration-with-agent-365-architecture-and-security)
+
+<a id="session-introduction-by-neta-haiby"></a>
+## Session Introduction by Neta Haiby
+
 ![00:00:11](../hover-notes-images/screenshot-01KWR2BQW41QDVDESWWARYTV40.png)
 [00:00:11](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=11s)
 
@@ -48,13 +70,23 @@ We want it to have an identity. We want to be able to identify that this action 
 ![00:02:55](../hover-notes-images/screenshot-01KWR2HVEC38G0J042H617ZZ9N.png)
 [00:02:55](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=175s)
 
-And the big thing here, if you leave here with nothing, understand this, Agent 365 provides all of the capabilities we're going to go through, not only for Microsoft Agents but also for third-party custom external agents as well. And from this slide you can see we've broken down the value of agents into these three key pillars that we think align to the core jobs to be done when it comes to managing and governing your agents at scale. The first is observe. Because very simply, you cannot govern what you cannot see. You also cannot trust and feel confident that you're adequately protected if you don't know what agents are out there.
+And the big thing here, if you leave here with nothing, understand this, Agent 365 provides all of the capabilities we're going to go through, not only for Microsoft Agents **but also for third-party custom external agents** as well. 
 
-So all of the features that we have available that allow you to not only see all of your agents across all of your different platforms, but also understand really important adoption trends, usage trends, trends for what platforms your agents are built on, and so much more, in addition to actions that you need to take to successfully mitigate and keep your agent ecosystem safe. Then we have govern. Now, "govern" can be a scary word for some, depending on your audience, right? Now, I want to assure you here, when we say, "Governance," this is not intended to put the brakes on innovation, put the brakes on agent adoption. This is intended to actually speed up the pace of adoption and speed up the pace of innovation.
+And from this slide you can see we've broken down the value of agents into these three key pillars that we think align to the core jobs to be done when it comes to managing and governing your agents at scale. 
 
-Because governance is all about implementing guardrails so that you know no matter how your agent is built, no matter who built that agent, there are the proper protections in place every single time for the agent based on its risk factor. And then with security, just like you would secure any other employee in your organization, any other data, asset, app, you name it, right, across your tenant, you need to adequately secure your agents as well.
+The first is **OBSERVE**. Because very simply, you cannot govern what you cannot see. You also cannot trust and feel confident that you're adequately protected if you don't know what agents are out there.
 
-And so with Defender, and Purview, and Entra, right, you have all the tools that you need to be sufficiently protected, not only to block these threats in real time, but take it a step further, do things like deep hunting and investigation to understand what caused these risks, right, to see full logs inside of Purview so you know every single step that that agent took when that incident occurred, and taking it a step even further, being able to identify other agents in your ecosystem that have similar vulnerabilities so that you can mitigate those agents before incidents occur. Now, again, I want to do a little quiz. Raise your hand, does Microsoft Agent 365 support all agents? Raise your hand if the answer is yes. Excellent, about 50% of you are listening. Okay, for those of you that didn't raise your hand, keep listening, we're going to keep ingraining that one.
+So all of the features that we have available that allow you to not only see all of your agents across all of your different platforms, but also understand really important adoption trends, usage trends, trends for what platforms your agents are built on, and so much more, in addition to actions that you need to take to successfully mitigate and keep your agent ecosystem safe. 
+
+Then we have **GOVERN**. Now, "govern" can be a scary word for some, depending on your audience, right? Now, I want to assure you here, when we say, "Governance," this is not intended to put the brakes on innovation, put the brakes on agent adoption. This is intended to actually speed up the pace of adoption and speed up the pace of innovation.
+
+Because governance is all about **implementing guardrails** so that you know no matter how your agent is built, no matter who built that agent, there are the **proper protections** in place every single time for the agent based on its risk factor. 
+
+And then with **SECURITY**, just like you would secure any other employee in your organization, any other data, asset, app, you name it, right, across your tenant, you need to adequately secure your agents as well.
+
+And so with Defender, and Purview, and Entra, you have all the tools that you need to be sufficiently protected, not only to block these threats in real time, but take it a step further, do things like deep hunting and investigation to understand what caused these risks, to see full logs inside of Purview so you know every single step that that agent took when that incident occurred, and taking it a step even further, being able to identify other agents in your ecosystem that have similar vulnerabilities so that you can mitigate those agents before incidents occur. 
+
+Now, again, I want to do a little quiz. Raise your hand, does Microsoft Agent 365 support all agents? Raise your hand if the answer is yes. Excellent, about 50% of you are listening. Okay, for those of you that didn't raise your hand, keep listening, we're going to keep ingraining that one.
 
 But how do we do this, how do we enable these agents that are not built outside of Microsoft?
 
@@ -67,6 +99,9 @@ The key here is our Agent 365 SDK. Now, this SDK is not an agent-building SDK, i
 [00:06:47](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=407s)
 
 But how does this work, how are we able to not only cover Microsoft agents, but also these third-party agents and common prebuilt agents that we know you are all using from different providers? So very simply it starts at the bottom.
+
+<a id="integration-with-microsoft-security-ecosystem-and-third-party-agents"></a>
+## Integration with Microsoft Security Ecosystem and Third-Party Agents
 
 ![00:07:03](../hover-notes-images/screenshot-01KWR2TXS2Q65PQDN746TKKK87.png)
 [00:07:03](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=423s)
@@ -123,6 +158,9 @@ Right, because agents are unique, they are essentially apps, they're built like 
 
 We have agents that work on behalf of the users, so essentially when a user invokes that agent, that agent assumes that user's credentials, passes that credential as the off token and the appropriate permissions of that user as well, right, when it comes to information retrieval or task completion. But we also have another way that agents can maintain their identity, and that's by leveraging their own user identity, right, an agent user identity.
 
+<a id="terminology-agent-blueprint-and-agent-identity"></a>
+## Terminology - Agent Blueprint and Agent Identity
+
 ![00:12:52](../hover-notes-images/screenshot-01KWRAZC3QMVHSW3YFMD2DYQV5.png)
 [00:12:52](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=772s)
 
@@ -130,7 +168,10 @@ We have agents that work on behalf of the users, so essentially when a user invo
 
 **Aarthi Saravanakumar:** Hello, everyone. Let's get started. You have to listen closely because I'm going to wear quite a few different hats.
 
-Persona: Agent Developer
+<a id="demo-your-agent-in-action-with-agent-365-sdk"></a>
+## Demo: Your Agent in Action with Agent 365 SDK
+
+### Persona: Agent Developer
 
 ![00:13:44](../hover-notes-images/screenshot-01KWRB0YD36BWZEC63YEJZGKWN.png)
 [00:13:44](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=824s)
@@ -181,7 +222,7 @@ It's ready to go. Of course, I mean as a developer you're going to test this loc
 
 Now, I'm shifting personas a little, so now I am an agent user, right?
 
-Persona: Agent User
+### Persona: Agent User
 
 ![00:18:50](../hover-notes-images/screenshot-01KWRBCW0295H26B2M5ND2WA8Q.png)
 [00:18:50](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=1130s)
@@ -212,7 +253,7 @@ Because this is my employee, right, I want to know how my interaction with this 
 
 Right, if I refresh it you will also see the recent chat show up. There were a couple of failures as well when the agent did not carry out what I wanted, so even if an end user I kind of get visibility on what my agent was up to, what was the prompt that I gave it, did it carry out the task that it needed? That is great, so developers have observability and users can use this observability. But then remember your IT admins definitely want to know what your agent is up to. I just want to go a couple of lines back.
 
-Persona: Admin
+### Persona: Admin
 
 ![00:22:34](../hover-notes-images/screenshot-01KWRBR7Z41VCNKJHZJ1JH1YZC.png)
 [00:22:34](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=1354s)
@@ -298,6 +339,9 @@ And I can drill into purview or Entra to learn more and investigate further. Alo
 
 And then, for me, one of my favorite features, because I come from the agent building space, I love that we now have a unified view into the activity across all agent types.
 
+<a id="demo-unified-activity-monitoring-and-agent-performance-metrics"></a>
+## Demo: Unified activity monitoring and agent performance metrics
+
 ![00:29:55](../hover-notes-images/screenshot-01KWRCAPK48HPCRRWBN06C7JCX.png)
 [00:29:55](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=1795s)
 
@@ -311,10 +355,19 @@ And then down below, you're going to see all of the users that are driving traff
 ![00:30:30](../hover-notes-images/screenshot-01KWRCBRHDVVZS3MT48YFQ46SV.png)
 [00:30:30](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=1830s)
 
-You understand their total sessions, their last activity date, and all of those different pieces. Now, this is a list view and that's great. We also give you a more visual representation, right, so you can understand where your agents are working with other agents.
+You understand their total sessions, their last activity date, and all of those different pieces. 
+
+<a id="demo-agent-map-view"></a>
+## Demo: Agent Map View
+
+Now, this is a list view and that's great. We also give you a more visual representation, right, so you can understand where your agents are working with other agents.
 
 ![00:30:43](../hover-notes-images/screenshot-01KWRCC5N740WA5R505TYTK3YA.png)
 [00:30:43](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=1843s)
+
+
+<a id="demo-connected-agents-view"></a>
+## Demo: Connected Agents View
 
 They're aggregated by the platforms these agents are built on. And if you hover over your agents where there are multiagent solutions, you're able to see which agents these are leveraging -- let me zoom out so you can see that a little bit easier, even across different platforms, right?
 
@@ -326,7 +379,13 @@ And if you want to drill in and see more details and you want to see a list view
 ![00:31:15](../hover-notes-images/screenshot-01KWRCDZCCJ82D0F86026F1JX3.png)
 [00:31:15](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=1875s)
 
-So I can see all of the agents that my researcher agent is using, whether they're all available or whether one's blocked, right, so really valuable information not only to understand different combinations and different dependencies that your agents have, but if you need to lean in and block an agent, you want to know the blast radius. If I block this agent, what else does it break, right? So all this information can be found here. Now, if I come back to my registry, I want to go ahead and drill into agents that have risks.
+So I can see all of the agents that my researcher agent is using, whether they're all available or whether one's blocked, so really valuable information not only to understand different combinations and different dependencies that your agents have, but if you need to lean in and block an agent, you want to know the blast radius. If I block this agent, what else does it break, right? So all this information can be found here. 
+
+
+<a id="demo-agents-with-risks"></a>
+## Demo: Agents with Risks
+
+Now, if I come back to my registry, I want to go ahead and drill into agents that have risks.
 
 ![00:31:47](../hover-notes-images/screenshot-01KWRCFC86HC3AJRWH22SZ9F2A.png)
 [00:31:47](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=1907s)
@@ -336,7 +395,12 @@ So here if I click on the risks themselves, we take you directly to the agent an
 ![00:31:53](../hover-notes-images/screenshot-01KWRCFHC2S6Y59BBXVN0ZASZH.png)
 [00:31:53](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=1913s)
 
-If I had more time, maybe another session, I would go ahead and drill into Entra or drill into Purview, so you can see just how granularly you can see these incidents, what caused them. In Purview, again, you have full access to those logs and you're actually able to get down to the document layer or the data source layer that was trying to be accessed that actually initiated this risk that was blocked, right? And here what I can do, I can go ahead and block this agent and then I can work with my SecOPs team to go and do some additional investigation and additional mitigation. Now, moving into agents without owners, I'm able to easily reassign an owner, right?
+If I had more time, maybe another session, I would go ahead and drill into Entra or drill into Purview, so you can see just how granularly you can see these incidents, what caused them. In Purview, again, you have full access to those logs and you're actually able to get down to the document layer or the data source layer that was trying to be accessed that actually initiated this risk that was blocked, right? And here what I can do, I can go ahead and block this agent and then I can work with my SecOPs team to go and do some additional investigation and additional mitigation. 
+
+<a id="demo-agents-without-owners"></a>
+## Demo: Agents without Owners
+
+Now, moving into agents without owners, I'm able to easily reassign an owner, right?
 
 ![00:32:37](../hover-notes-images/screenshot-01KWRCJ31J7CAENXMAW9XKFED3.png)
 [00:32:37](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=1957s)
@@ -345,6 +409,9 @@ I can go ahead and say, "Hey, Aarthi, I'm going to give you a bit more work and 
 
 ![00:32:46](../hover-notes-images/screenshot-01KWRCJBYVM1T5EBJCG1AV85S0.png)
 [00:32:46](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=1966s)
+
+<a id="demo-agent-management-rules"></a>
+## Demo: Agent Management Rules
 
 But as you can see here, this process is pretty manual, right? So it would be great to have a way to automate this. That's where rules come in.
 
@@ -360,6 +427,10 @@ So you can do things like bulk agent reassignment, when an individual leaves an 
 
 ![00:33:48](../hover-notes-images/screenshot-01KWRCMY2PA8MD8D14ZRWBB27Y.png)
 [00:33:48](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=2028s)
+
+
+<a id="demo-policy-templates"></a>
+## Demo: Policy Templates
 
 Now, templates I would say is one of our hero features.
 
@@ -380,6 +451,9 @@ And I have a number of different access packages that I can select from. I also 
 
 ![00:34:41](../hover-notes-images/screenshot-01KWRCQSVSRK1E5FV0MTDJJ9DM.png)
 [00:34:41](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=2081s)
+
+<a id="demo-apply-policy-template-while-publishing-agents"></a>
+## Demo: Apply Policy Template while Publishing Agents
 
 So I can go ahead now that I've created this agent and I will leverage it as a part of that agent approval flow that Aarthi was mentioning.
 
@@ -413,6 +487,9 @@ But I want to go ahead and use that DevOps template that I created custom for th
 
 You'll see here all of those policies that you saw in templates are now being applied, and also the appropriate permissions. I can go ahead and look through, review those permissions, approve them. And now this agent is available for my organization.
 
+<a id="demo-registry-sync-demonstration-with-third-party-platforms"></a>
+## Demo: Registry Sync Demonstration with Third-Party Platforms
+
 ![00:36:12](../hover-notes-images/screenshot-01KWRCX3EWJ85909ED571TV524.png)
 [00:36:12](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=2172s)
 
@@ -426,15 +503,23 @@ So here I've configured my access to those platforms. And if I click into Google
 ![00:36:57](../hover-notes-images/screenshot-01KWRCYFS7Q6FQ3MXMAAFDP1G3.png)
 [00:36:57](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=2217s)
 
-And because in Google, I also have permissions to delete agents, you'll notice that I also have that permission to delete this agent if I wanted to as well. Now, there's so much more here. We allow you to identify and bring shadow agents under management.
+And because in Google, I also have permissions to delete agents, you'll notice that I also have that permission to delete this agent if I wanted to as well. 
+
+<a id="demo-shadow-agents"></a>
+## Demo: Shadow Agents
+
+Now, there's so much more here. We allow you to identify and bring shadow agents under management.
 
 ![00:37:26](../hover-notes-images/screenshot-01KWRCZBTN40ZCB03ZXGFTEXVG.png)
 [00:37:26](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=2246s)
 
-We're expanding this outside of OpenClaude to leverage Defender to identify 22 plus, give or take, additional local platforms so that you can either block or bring those under management, right? We also allow you to govern and manage all of your tools right here. But I'm getting the speed-up signal, so I'm going to I'm going to go back to my PowerPoint and finish out here with some really exciting details around customer momentum.
+We're expanding this outside of OpenClaw to leverage Defender to identify 22 plus, give or take, additional local platforms so that you can either block or bring those under management, right? We also allow you to govern and manage all of your tools right here. But I'm getting the speed-up signal, so I'm going to I'm going to go back to my PowerPoint and finish out here with some really exciting details around customer momentum.
 
 ![00:37:46](../hover-notes-images/screenshot-01KWRCZZB71NMR9EZ9Z4Q61KN5.png)
 [00:37:46](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=2266s)
+
+<a id="early-adopters"></a>
+## Early Adopters
 
 So as you can see here, we have a ton of value, and we have really enjoyed getting to work with some early adopters.
 
@@ -447,6 +532,9 @@ Once such adopter is EY. So with EY, they have found that for mission-critical a
 [00:38:23](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=2303s)
 
 The next is Genspark. And lucky enough, I don't have to speak for them because we have Ray here to come up on stage and tell us all about our partnership and what they've done with Agent 365.
+
+<a id="genspark-integration-with-agent-365-architecture-and-security"></a>
+## Genspark Integration with Agent 365: Architecture and Security
 
 ![00:38:39](../hover-notes-images/screenshot-01KWRD1KNDDRS61RM62E70M453.png)
 [00:38:39](https://www.youtube.com/watch?v=S8OtcBnfeGU&t=2319s)
