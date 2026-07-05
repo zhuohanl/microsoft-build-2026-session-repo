@@ -1,0 +1,4421 @@
+WEBVTT
+
+1
+00:00:01.200 --> 00:00:02.670
+Neta Haiby: Hello, everybody.
+
+2
+00:00:02.670 --> 00:00:04.380
+Thank you for
+joining our session.
+
+3
+00:00:04.380 --> 00:00:06.630
+I'm Neta. I recommend
+you put your headphones
+
+4
+00:00:06.630 --> 00:00:08.040
+on because it's going
+to be much easier
+
+5
+00:00:08.040 --> 00:00:10.260
+to hear us with the headphones.
+
+6
+00:00:10.260 --> 00:00:12.390
+So please put your
+headphones on.
+
+7
+00:00:12.390 --> 00:00:13.440
+So I'm Neta.
+
+8
+00:00:13.440 --> 00:00:16.230
+Together with me are a set
+of speakers, and we're going
+
+9
+00:00:16.230 --> 00:00:18.960
+to together show you how
+you can build secure
+
+10
+00:00:18.960 --> 00:00:22.200
+and enterprise-ready
+agents with Agent 365.
+
+11
+00:00:22.200 --> 00:00:24.360
+So before we get
+started, raise your hand
+
+12
+00:00:24.360 --> 00:00:25.920
+if you are building agents today
+
+13
+00:00:25.920 --> 00:00:28.350
+or using agents today
+in your organization.
+
+14
+00:00:28.350 --> 00:00:32.010
+Okay. Look around, I think it's
+everybody, almost everybody.
+
+15
+00:00:32.010 --> 00:00:33.270
+Now, raise your hand
+
+16
+00:00:33.270 --> 00:00:35.670
+if you think your agents
+are enterprise-ready,
+
+17
+00:00:35.670 --> 00:00:38.550
+observed, secure, and governed.
+
+18
+00:00:38.550 --> 00:00:39.930
+Okay, I have one.
+
+19
+00:00:39.930 --> 00:00:41.910
+Okay, great, so you're
+in the right place,
+
+20
+00:00:41.910 --> 00:00:42.810
+because today here we're going
+
+21
+00:00:42.810 --> 00:00:45.780
+to learn how you can build
+enterprise-ready, secure,
+
+22
+00:00:45.780 --> 00:00:48.810
+and governed agents
+with Agent 365.
+
+23
+00:00:48.810 --> 00:00:50.190
+So let's get started.
+
+24
+00:00:50.190 --> 00:00:51.570
+We saw that agents are here.
+
+25
+00:00:51.570 --> 00:00:53.220
+Almost all of us
+raised our hands.
+
+26
+00:00:53.220 --> 00:00:55.860
+All of us are using agents
+in our organizations.
+
+27
+00:00:55.860 --> 00:01:01.500
+And IDC predicts that by 2028
+there will be 1.3 billion agents
+
+28
+00:01:01.500 --> 00:01:02.640
+in organizations.
+
+29
+00:01:02.640 --> 00:01:06.930
+That's a huge number, more than
+most of countries in the world.
+
+30
+00:01:06.930 --> 00:01:09.120
+And there are different types
+of agents that we talk about.
+
+31
+00:01:09.120 --> 00:01:10.950
+One are the SaaS agents.
+
+32
+00:01:10.950 --> 00:01:13.140
+Those are agents that are
+prebuilt, they come built
+
+33
+00:01:13.140 --> 00:01:16.200
+in the application, they come
+prebuilt on webs, that we kind
+
+34
+00:01:16.200 --> 00:01:19.010
+of start using and using
+in the organization.
+
+35
+00:01:19.010 --> 00:01:21.290
+Then there's the endpoint
+agents that we are building.
+
+36
+00:01:21.290 --> 00:01:22.730
+These can be the
+OpenClaw agents,
+
+37
+00:01:22.730 --> 00:01:26.540
+these could be agents building
+with CLI and other agents.
+
+38
+00:01:26.540 --> 00:01:28.070
+And we have the cloud agent.
+
+39
+00:01:28.070 --> 00:01:30.440
+These are the agents that we are
+building on different clouds,
+
+40
+00:01:30.440 --> 00:01:34.080
+on different platforms,
+and different frameworks.
+
+41
+00:01:34.080 --> 00:01:35.490
+But the questions that come are,
+
+42
+00:01:35.490 --> 00:01:38.010
+"Can our organization
+discover all these agents,
+
+43
+00:01:38.010 --> 00:01:40.500
+can they manage them, are
+they behaving properly,
+
+44
+00:01:40.500 --> 00:01:42.900
+is my agent behaving based on
+the intent that I wanted it
+
+45
+00:01:42.900 --> 00:01:44.760
+to do, is it breaking
+with the intent,
+
+46
+00:01:44.760 --> 00:01:47.220
+is it misusing the tools
+I connected to it,
+
+47
+00:01:47.220 --> 00:01:50.760
+is it oversharing
+data or leaking data,
+
+48
+00:01:50.760 --> 00:01:53.490
+and can it be governed and
+audited at the end of the day?"
+
+49
+00:01:53.490 --> 00:01:55.350
+And usually as developers,
+stuff like that,
+
+50
+00:01:55.350 --> 00:01:56.850
+we take different frameworks
+
+51
+00:01:56.850 --> 00:02:00.210
+and different products
+to make that happen.
+
+52
+00:02:00.210 --> 00:02:01.830
+And we want our
+agents, first of all,
+
+53
+00:02:01.830 --> 00:02:05.430
+to be able to be observable, so
+to be registered in an inventory
+
+54
+00:02:05.430 --> 00:02:07.410
+and registry and
+to be observable.
+
+55
+00:02:07.410 --> 00:02:08.880
+We want it to have an identity.
+
+56
+00:02:08.880 --> 00:02:10.260
+We want to be able to identify
+
+57
+00:02:10.260 --> 00:02:12.630
+that this action was
+made by this agent.
+
+58
+00:02:12.630 --> 00:02:14.220
+We want it to have
+threat protection.
+
+59
+00:02:14.220 --> 00:02:16.590
+There's a lot of new
+generative AI risks coming in,
+
+60
+00:02:16.590 --> 00:02:19.850
+like prompt injection, intent
+breaking, tools misuse.
+
+61
+00:02:19.850 --> 00:02:21.380
+We want it to have
+threat protection.
+
+62
+00:02:21.380 --> 00:02:22.700
+We want it to have
+data security,
+
+63
+00:02:22.700 --> 00:02:24.950
+not to over leak data
+or overshare data.
+
+64
+00:02:24.950 --> 00:02:28.310
+And we want it to be in
+governance and in compliance.
+
+65
+00:02:28.310 --> 00:02:31.460
+And for that, that's
+where Agent 365 comes in.
+
+66
+00:02:31.460 --> 00:02:34.400
+It's the control point for any
+agent that you're building,
+
+67
+00:02:34.400 --> 00:02:36.020
+any agent in the organization.
+
+68
+00:02:36.020 --> 00:02:37.880
+And I'd like to invite
+Kendra to share
+
+69
+00:02:37.880 --> 00:02:40.310
+with us more about Agent 365.
+
+70
+00:02:40.310 --> 00:02:41.180
+Thank you, Kendra.
+
+71
+00:02:41.180 --> 00:02:43.110
+Kendra Springer: Thank
+you so much, Neta.
+
+72
+00:02:43.110 --> 00:02:46.530
+Hi, everyone, thank you so
+much for being here with us.
+
+73
+00:02:46.530 --> 00:02:51.090
+We are going to take you through
+over the next few slides why you
+
+74
+00:02:51.090 --> 00:02:52.590
+need Agent 365.
+
+75
+00:02:52.590 --> 00:02:55.740
+What is the value that
+you're going to get?
+
+76
+00:02:55.740 --> 00:02:59.160
+And the big thing here, if
+you leave here with nothing,
+
+77
+00:02:59.160 --> 00:03:02.910
+understand this, Agent
+365 provides all
+
+78
+00:03:02.910 --> 00:03:04.680
+of the capabilities we're
+going to go through,
+
+79
+00:03:04.680 --> 00:03:07.710
+not only for Microsoft
+Agents but also
+
+80
+00:03:07.710 --> 00:03:11.970
+for third-party custom
+external agents as well.
+
+81
+00:03:11.970 --> 00:03:15.240
+And from this slide you can see
+we've broken down the value
+
+82
+00:03:15.240 --> 00:03:19.650
+of agents into these three key
+pillars that we think align
+
+83
+00:03:19.650 --> 00:03:22.770
+to the core jobs to be done
+when it comes to managing
+
+84
+00:03:22.770 --> 00:03:25.440
+and governing your
+agents at scale.
+
+85
+00:03:25.440 --> 00:03:27.330
+The first is observe.
+
+86
+00:03:27.330 --> 00:03:31.590
+Because very simply, you cannot
+govern what you cannot see.
+
+87
+00:03:31.590 --> 00:03:34.740
+You also cannot trust
+and feel confident
+
+88
+00:03:34.740 --> 00:03:36.660
+that you're adequately protected
+
+89
+00:03:36.660 --> 00:03:38.910
+if you don't know what
+agents are out there.
+
+90
+00:03:38.910 --> 00:03:43.200
+So all of the features that we
+have available that allow you
+
+91
+00:03:43.200 --> 00:03:46.200
+to not only see all of
+your agents across all
+
+92
+00:03:46.200 --> 00:03:47.700
+of your different platforms,
+
+93
+00:03:47.700 --> 00:03:50.820
+but also understand really
+important adoption trends,
+
+94
+00:03:50.820 --> 00:03:56.010
+usage trends, trends for what
+platforms your agents are built
+
+95
+00:03:56.010 --> 00:03:59.040
+on, and so much more,
+in addition to actions
+
+96
+00:03:59.040 --> 00:04:02.790
+that you need to take to
+successfully mitigate
+
+97
+00:04:02.790 --> 00:04:05.610
+and keep your agent
+ecosystem safe.
+
+98
+00:04:05.610 --> 00:04:07.410
+Then we have govern.
+
+99
+00:04:07.410 --> 00:04:10.170
+Now, "govern" can be a
+scary word for some,
+
+100
+00:04:10.170 --> 00:04:12.240
+depending on your
+audience, right?
+
+101
+00:04:12.240 --> 00:04:15.570
+Now, I want to assure you here,
+when we say, "Governance,"
+
+102
+00:04:15.570 --> 00:04:19.140
+this is not intended to put
+the brakes on innovation,
+
+103
+00:04:19.140 --> 00:04:21.570
+put the brakes on
+agent adoption.
+
+104
+00:04:21.570 --> 00:04:25.320
+This is intended to actually
+speed up the pace of adoption
+
+105
+00:04:25.320 --> 00:04:27.780
+and speed up the
+pace of innovation.
+
+106
+00:04:27.780 --> 00:04:31.440
+Because governance is all
+about implementing guardrails
+
+107
+00:04:31.440 --> 00:04:34.710
+so that you know no matter
+how your agent is built,
+
+108
+00:04:34.710 --> 00:04:38.790
+no matter who built that agent,
+there are the proper protections
+
+109
+00:04:38.790 --> 00:04:41.100
+in place every single time
+
+110
+00:04:41.100 --> 00:04:44.840
+for the agent based
+on its risk factor.
+
+111
+00:04:44.840 --> 00:04:46.490
+And then with security,
+
+112
+00:04:46.490 --> 00:04:48.920
+just like you would
+secure any other employee
+
+113
+00:04:48.920 --> 00:04:53.510
+in your organization, any other
+data, asset, app, you name it,
+
+114
+00:04:53.510 --> 00:04:55.280
+right, across your tenant,
+
+115
+00:04:55.280 --> 00:04:58.890
+you need to adequately
+secure your agents as well.
+
+116
+00:04:58.890 --> 00:05:02.910
+And so with Defender, and
+Purview, and Entra, right,
+
+117
+00:05:02.910 --> 00:05:04.800
+you have all the
+tools that you need
+
+118
+00:05:04.800 --> 00:05:09.020
+to be sufficiently protected,
+not only to block these threats
+
+119
+00:05:09.020 --> 00:05:11.960
+in real time, but take
+it a step further,
+
+120
+00:05:11.960 --> 00:05:15.050
+do things like deep
+hunting and investigation
+
+121
+00:05:15.050 --> 00:05:18.470
+to understand what caused
+these risks, right,
+
+122
+00:05:18.470 --> 00:05:21.960
+to see full logs
+inside of Purview
+
+123
+00:05:21.960 --> 00:05:25.320
+so you know every single
+step that that agent took
+
+124
+00:05:25.320 --> 00:05:29.430
+when that incident occurred, and
+taking it a step even further,
+
+125
+00:05:29.430 --> 00:05:33.060
+being able to identify other
+agents in your ecosystem
+
+126
+00:05:33.060 --> 00:05:35.490
+that have similar
+vulnerabilities
+
+127
+00:05:35.490 --> 00:05:40.380
+so that you can mitigate those
+agents before incidents occur.
+
+128
+00:05:40.380 --> 00:05:44.130
+Now, again, I want
+to do a little quiz.
+
+129
+00:05:44.130 --> 00:05:51.630
+Raise your hand, does Microsoft
+Agent 365 support all agents?
+
+130
+00:05:51.630 --> 00:05:55.260
+Raise your hand if
+the answer is yes.
+
+131
+00:05:55.260 --> 00:05:57.690
+Excellent, about 50%
+of you are listening.
+
+132
+00:05:57.690 --> 00:05:59.940
+Okay, for those of you that
+didn't raise your hand,
+
+133
+00:05:59.940 --> 00:06:03.150
+keep listening, we're going
+to keep ingraining that one.
+
+134
+00:06:03.150 --> 00:06:08.670
+But how do we do this, how
+do we enable these agents
+
+135
+00:06:08.670 --> 00:06:11.550
+that are not built
+outside of Microsoft?
+
+136
+00:06:11.550 --> 00:06:15.570
+The key here is
+our Agent 365 SDK.
+
+137
+00:06:15.570 --> 00:06:20.130
+Now, this SDK is not
+an agent-building SDK,
+
+138
+00:06:20.130 --> 00:06:22.800
+it is not going to
+host your agent.
+
+139
+00:06:22.800 --> 00:06:26.100
+It's purely an SDK
+to wrap your agent
+
+140
+00:06:26.100 --> 00:06:30.030
+and make it discoverable
+within Agent 365.
+
+141
+00:06:30.030 --> 00:06:33.300
+You can provide an
+agent ID to your agent,
+
+142
+00:06:33.300 --> 00:06:35.760
+you can enable full
+observability,
+
+143
+00:06:35.760 --> 00:06:39.540
+you can enable full security
+policies to be applied
+
+144
+00:06:39.540 --> 00:06:42.060
+to those agents, and you
+could take advantage
+
+145
+00:06:42.060 --> 00:06:47.160
+of our productivity capabilities
+through our tools gateway.
+
+146
+00:06:47.160 --> 00:06:49.980
+But how does this
+work, how are we able
+
+147
+00:06:49.980 --> 00:06:52.620
+to not only cover
+Microsoft agents,
+
+148
+00:06:52.620 --> 00:06:54.600
+but also these
+third-party agents
+
+149
+00:06:54.600 --> 00:06:59.040
+and common prebuilt agents
+that we know you are all using
+
+150
+00:06:59.040 --> 00:07:00.720
+from different providers?
+
+151
+00:07:00.720 --> 00:07:03.990
+So very simply it
+starts at the bottom.
+
+152
+00:07:03.990 --> 00:07:10.140
+Foundationally Agent 365 is that
+end-to-end governance platform
+
+153
+00:07:10.140 --> 00:07:12.270
+that allows you to scale
+
+154
+00:07:12.270 --> 00:07:14.940
+and operationalize
+your agent governance
+
+155
+00:07:14.940 --> 00:07:17.400
+and management processes, right?
+
+156
+00:07:17.400 --> 00:07:20.760
+But if you think about
+Agent 365 as the stool,
+
+157
+00:07:20.760 --> 00:07:24.180
+the legs of the stool
+that hold Agent 365
+
+158
+00:07:24.180 --> 00:07:27.840
+up are those trusted
+security solutions
+
+159
+00:07:27.840 --> 00:07:30.660
+at an enterprise
+level, Microsoft Entra
+
+160
+00:07:30.660 --> 00:07:35.040
+for identity management,
+Defender for risk assessment
+
+161
+00:07:35.040 --> 00:07:38.940
+and real-time threat detection
+and blocking, as well as Purview
+
+162
+00:07:38.940 --> 00:07:42.480
+for data governance, and
+then Microsoft Intune
+
+163
+00:07:42.480 --> 00:07:45.300
+for shadow AI detection.
+
+164
+00:07:45.300 --> 00:07:50.070
+Now, again, we have a plethora
+of agent solutions available
+
+165
+00:07:50.070 --> 00:07:53.040
+to you, both across
+Microsoft from all
+
+166
+00:07:53.040 --> 00:07:56.790
+of our different agent-building
+platforms to the prebuilt agents
+
+167
+00:07:56.790 --> 00:07:59.190
+like Cowork or Researcher.
+
+168
+00:07:59.190 --> 00:08:04.080
+We also have common really
+valuable agent solutions
+
+169
+00:08:04.080 --> 00:08:06.450
+that we know that you
+all are leveraging
+
+170
+00:08:06.450 --> 00:08:08.580
+from third-party
+providers, right?
+
+171
+00:08:08.580 --> 00:08:12.630
+We know our customers have a
+very heterogenous mix of agents
+
+172
+00:08:12.630 --> 00:08:13.920
+that you're leveraging.
+
+173
+00:08:13.920 --> 00:08:18.060
+We also know that where
+you can't find a solution
+
+174
+00:08:18.060 --> 00:08:21.540
+immediately, you're building
+your own custom agents
+
+175
+00:08:21.540 --> 00:08:25.140
+on the platforms of your
+choice across different clouds
+
+176
+00:08:25.140 --> 00:08:28.680
+and across different solutions,
+like LangChain agents,
+
+177
+00:08:28.680 --> 00:08:32.790
+you're building on AWS,
+Gemini, et cetera.
+
+178
+00:08:32.790 --> 00:08:34.110
+And then lastly, we know
+
+179
+00:08:34.110 --> 00:08:37.740
+that there are really common
+platforms that it would be great
+
+180
+00:08:37.740 --> 00:08:40.950
+to be able to automate
+and ingest the agents
+
+181
+00:08:40.950 --> 00:08:42.750
+across these platforms.
+
+182
+00:08:42.750 --> 00:08:46.650
+So lots of agents we need
+to cover with Agent 365.
+
+183
+00:08:46.650 --> 00:08:49.320
+And we are able to do that.
+
+184
+00:08:49.320 --> 00:08:52.050
+So within Microsoft all
+of the agents built
+
+185
+00:08:52.050 --> 00:08:56.070
+on Microsoft have a native
+experience inside of Agent 365.
+
+186
+00:08:56.070 --> 00:08:59.400
+So right out of the box you're
+going to see every single agent,
+
+187
+00:08:59.400 --> 00:09:02.360
+whether it's in a draft
+state or it's fully produced
+
+188
+00:09:02.360 --> 00:09:06.470
+in the production, and whether
+changes are occurring real time.
+
+189
+00:09:06.470 --> 00:09:09.480
+Right, you're going to have
+access to all of that data,
+
+190
+00:09:09.480 --> 00:09:11.910
+all of that observability
+data, you're going to be able
+
+191
+00:09:11.910 --> 00:09:15.750
+to apply those policy templates,
+those security guardrails,
+
+192
+00:09:15.750 --> 00:09:17.820
+you're going to be able
+to take action, right,
+
+193
+00:09:17.820 --> 00:09:21.780
+all of those pieces with
+no additional effort.
+
+194
+00:09:21.780 --> 00:09:24.450
+You're going to be able
+to do the same for some
+
+195
+00:09:24.450 --> 00:09:28.710
+of our third-party partner
+agent solutions as well.
+
+196
+00:09:28.710 --> 00:09:31.770
+We are building an agent
+ecosystem with these partners
+
+197
+00:09:31.770 --> 00:09:37.140
+to proactively extend our
+SDK and enable an agent ID
+
+198
+00:09:37.140 --> 00:09:39.120
+within those agents, and enable
+
+199
+00:09:39.120 --> 00:09:41.790
+that observability
+capabilities, and much more.
+
+200
+00:09:41.790 --> 00:09:44.760
+And you're going to hear from
+one of such of our partners
+
+201
+00:09:44.760 --> 00:09:47.520
+at the end of this
+session as well.
+
+202
+00:09:47.520 --> 00:09:49.710
+Now, for those custom
+agents, right,
+
+203
+00:09:49.710 --> 00:09:54.270
+the agents that you are building
+on LangChain, as I mentioned,
+
+204
+00:09:54.270 --> 00:09:56.310
+you're leveraging
+another SDK, right,
+
+205
+00:09:56.310 --> 00:09:59.400
+you're leveraging an
+AWS cloud solution,
+
+206
+00:09:59.400 --> 00:10:04.080
+you can onboard these agents
+within Agent 365 with the SDK
+
+207
+00:10:04.080 --> 00:10:06.810
+that I mentioned earlier.
+
+208
+00:10:06.810 --> 00:10:10.680
+And with this SDK, you're going
+to get things like identity,
+
+209
+00:10:10.680 --> 00:10:16.610
+observability, tools, messaging,
+threat protection, governance,
+
+210
+00:10:16.610 --> 00:10:18.380
+as well as data security.
+
+211
+00:10:18.380 --> 00:10:21.320
+So it is a comprehensive SDK
+
+212
+00:10:21.320 --> 00:10:25.110
+that gives you everything you
+need, but also the flexibility
+
+213
+00:10:25.110 --> 00:10:29.100
+to onboard only
+to what you want.
+
+214
+00:10:29.100 --> 00:10:30.660
+And then this last piece here
+
+215
+00:10:30.660 --> 00:10:34.410
+within our Connected Agent
+platforms you're able to do this
+
+216
+00:10:34.410 --> 00:10:36.570
+through a feature
+called "registry sync,"
+
+217
+00:10:36.570 --> 00:10:38.970
+which I will take you
+through in the demo.
+
+218
+00:10:38.970 --> 00:10:42.630
+Registry sync essentially allows
+us to take your permissions,
+
+219
+00:10:42.630 --> 00:10:47.790
+your credentials across these
+platforms, like Amazon Bedrock
+
+220
+00:10:47.790 --> 00:10:53.370
+and Google Vertex AI, and ingest
+those agents into the registry,
+
+221
+00:10:53.370 --> 00:10:56.100
+but only for
+visibility purposes,
+
+222
+00:10:56.100 --> 00:10:58.740
+and then any governance
+capabilities or permissions
+
+223
+00:10:58.740 --> 00:11:00.960
+that you have across
+these platforms,
+
+224
+00:11:00.960 --> 00:11:04.140
+you will also have those
+capabilities inside
+
+225
+00:11:04.140 --> 00:11:07.680
+of Agent 365 as well.
+
+226
+00:11:07.680 --> 00:11:11.610
+And I know as much as you
+guys really love slides,
+
+227
+00:11:11.610 --> 00:11:15.900
+I'm going to have to bore you
+with a really incredible demo.
+
+228
+00:11:15.900 --> 00:11:19.890
+But before we get to that demo,
+I do want to give you some terms
+
+229
+00:11:19.890 --> 00:11:22.950
+that are new terms,
+but really fundamental
+
+230
+00:11:22.950 --> 00:11:25.680
+for your understanding
+and setting you
+
+231
+00:11:25.680 --> 00:11:27.270
+up for success, right?
+
+232
+00:11:27.270 --> 00:11:29.340
+So the first terms is
+an "agent blueprint".
+
+233
+00:11:29.340 --> 00:11:30.510
+Now, the best way to think
+
+234
+00:11:30.510 --> 00:11:34.410
+about an agent blueprint
+is a reusable instruction
+
+235
+00:11:34.410 --> 00:11:38.040
+for an agent that lets
+it know what tools,
+
+236
+00:11:38.040 --> 00:11:40.680
+what data it can
+leverage, what rules
+
+237
+00:11:40.680 --> 00:11:42.270
+and what guardrails
+are in place.
+
+238
+00:11:42.270 --> 00:11:45.960
+Think about this similar
+to an agent recipe, right,
+
+239
+00:11:45.960 --> 00:11:50.310
+that other agents and agent
+identities can be created from.
+
+240
+00:11:50.310 --> 00:11:56.880
+Now, an agent identity is
+simply taking an agent identity
+
+241
+00:11:56.880 --> 00:12:00.450
+and upleveling it from a
+service principal identity
+
+242
+00:12:00.450 --> 00:12:04.650
+so that it is more in line
+with a user identity level.
+
+243
+00:12:04.650 --> 00:12:06.930
+Right, because
+agents are unique,
+
+244
+00:12:06.930 --> 00:12:10.260
+they are essentially apps,
+they're built like apps.
+
+245
+00:12:10.260 --> 00:12:13.590
+But the caveat here is
+they function like users.
+
+246
+00:12:13.590 --> 00:12:17.460
+So you need to have an
+identity that is appropriate
+
+247
+00:12:17.460 --> 00:12:20.670
+for their function
+within your ecosystem,
+
+248
+00:12:20.670 --> 00:12:23.850
+and Agent Identity is
+specifically created
+
+249
+00:12:23.850 --> 00:12:26.670
+to support agents in this.
+
+250
+00:12:26.670 --> 00:12:29.550
+Now, these agent identities
+can be authenticated
+
+251
+00:12:29.550 --> 00:12:31.650
+in two different ways, right?
+
+252
+00:12:31.650 --> 00:12:34.530
+We have agents that work
+on behalf of the users,
+
+253
+00:12:34.530 --> 00:12:37.260
+so essentially when a
+user invokes that agent,
+
+254
+00:12:37.260 --> 00:12:41.130
+that agent assumes that
+user's credentials,
+
+255
+00:12:41.130 --> 00:12:44.340
+passes that credential
+as the off token
+
+256
+00:12:44.340 --> 00:12:47.910
+and the appropriate permissions
+of that user as well, right,
+
+257
+00:12:47.910 --> 00:12:51.870
+when it comes to information
+retrieval or task completion.
+
+258
+00:12:51.870 --> 00:12:53.250
+But we also have another way
+
+259
+00:12:53.250 --> 00:12:55.770
+that agents can maintain
+their identity,
+
+260
+00:12:55.770 --> 00:13:00.120
+and that's by leveraging their
+own user identity, right,
+
+261
+00:13:00.120 --> 00:13:03.120
+an agent user identity.
+
+262
+00:13:03.120 --> 00:13:07.740
+What happens here is that agent
+maintains their own identity
+
+263
+00:13:07.740 --> 00:13:10.740
+and their own permissions,
+and they pass that identity
+
+264
+00:13:10.740 --> 00:13:14.910
+for authentication, and they're
+able to function on their own
+
+265
+00:13:14.910 --> 00:13:20.400
+without working on behalf of
+a user, if that makes sense.
+
+266
+00:13:20.400 --> 00:13:24.870
+Okay, with those two terms
+in your back pocket,
+
+267
+00:13:24.870 --> 00:13:26.700
+we will now get to the demo.
+
+268
+00:13:26.700 --> 00:13:29.520
+Aarthi, I would love to
+invite you onstage to take us
+
+269
+00:13:29.520 --> 00:13:32.580
+through an incredible demo where
+we're going to take you end-
+
+270
+00:13:32.580 --> 00:13:36.450
+-to-end to see your agent in
+action, onboard an agent
+
+271
+00:13:36.450 --> 00:13:39.340
+with our SDK, and more.
+
+272
+00:13:41.250 --> 00:13:42.450
+Aarthi Saravanakumar:
+Hello, everyone.
+
+273
+00:13:42.450 --> 00:13:43.530
+Let's get started.
+
+274
+00:13:43.530 --> 00:13:45.300
+You have to listen
+closely because I'm going
+
+275
+00:13:45.300 --> 00:13:47.580
+to wear quite a few
+different hats.
+
+276
+00:13:47.580 --> 00:13:50.700
+I'm starting out as
+an agent developer.
+
+277
+00:13:50.700 --> 00:13:55.590
+I am in my favorite code
+editor, I'm in VS Code.
+
+278
+00:13:55.590 --> 00:13:59.730
+This is a travel agent, it's
+built on LangChain using node.JS.
+
+279
+00:13:59.730 --> 00:14:02.790
+Like Kendra did, Agent
+365 is more than --
+
+280
+00:14:02.790 --> 00:14:05.790
+more for just in
+Microsoft built agents.
+
+281
+00:14:05.790 --> 00:14:08.340
+And that's why we
+specifically chose LangChain
+
+282
+00:14:08.340 --> 00:14:10.110
+as an example for this demo.
+
+283
+00:14:10.110 --> 00:14:13.020
+This travel agent is helpful.
+
+284
+00:14:13.020 --> 00:14:16.680
+It's given us source, and the
+destination, and travel dates.
+
+285
+00:14:16.680 --> 00:14:19.980
+It gives me three suggestions
+for hotels, three suggestions
+
+286
+00:14:19.980 --> 00:14:23.430
+for flights, and maybe
+restaurants, right?
+
+287
+00:14:23.430 --> 00:14:26.250
+I have tested this agent here.
+
+288
+00:14:26.250 --> 00:14:28.830
+And if you see, I
+invoked this agent
+
+289
+00:14:28.830 --> 00:14:30.240
+and I got some results here.
+
+290
+00:14:30.240 --> 00:14:32.820
+Let me just scroll this
+up so you can see.
+
+291
+00:14:32.820 --> 00:14:35.610
+Yeah, I got three airlines
+from Seattle to San Francisco
+
+292
+00:14:35.610 --> 00:14:37.920
+for Build and I
+have hotels here.
+
+293
+00:14:37.920 --> 00:14:42.540
+Now, you are asked to make this
+agent ready for Agent 365,
+
+294
+00:14:42.540 --> 00:14:44.310
+configured for Agent 365.
+
+295
+00:14:44.310 --> 00:14:45.930
+What does that entail?
+
+296
+00:14:45.930 --> 00:14:48.570
+Now, Kendra introduced
+quite a few concepts.
+
+297
+00:14:48.570 --> 00:14:50.820
+And if you had to stitch
+together all of this
+
+298
+00:14:50.820 --> 00:14:53.610
+on your own, you can, we
+have excellent learn docs,
+
+299
+00:14:53.610 --> 00:14:56.130
+we have samples out there
+that you can do this with,
+
+300
+00:14:56.130 --> 00:14:59.310
+but all of you have
+probably heard about Skills
+
+301
+00:14:59.310 --> 00:15:02.970
+and how coding agents can
+do some of our jobs for us,
+
+302
+00:15:02.970 --> 00:15:06.300
+and so we decided that we will
+ship some very specific agent
+
+303
+00:15:06.300 --> 00:15:08.340
+pieces, six to five skills.
+
+304
+00:15:08.340 --> 00:15:11.070
+I'm going to show you how
+you can maybe invoke them
+
+305
+00:15:11.070 --> 00:15:15.150
+from VS Code, right,
+I'm doing slash skills
+
+306
+00:15:15.150 --> 00:15:18.690
+and I'm doing Agent 365,
+and I see, "Oh, okay,
+
+307
+00:15:18.690 --> 00:15:19.920
+there are a few skills."
+
+308
+00:15:19.920 --> 00:15:23.100
+But the rest of this execution
+I'm going to show you just
+
+309
+00:15:23.100 --> 00:15:25.200
+because it takes up -- we
+are making code changes,
+
+310
+00:15:25.200 --> 00:15:26.550
+it takes about 10 minutes to run
+
+311
+00:15:26.550 --> 00:15:28.440
+and I'll consume the
+rest of your demo.
+
+312
+00:15:28.440 --> 00:15:30.330
+I'm still a developer,
+but I just switched
+
+313
+00:15:30.330 --> 00:15:32.280
+to GitHub Copilot here.
+
+314
+00:15:32.280 --> 00:15:35.160
+You can use Claude Code, you can
+use your favorite coding agent
+
+315
+00:15:35.160 --> 00:15:36.900
+of choice, does not matter.
+
+316
+00:15:36.900 --> 00:15:38.970
+Now, let's look through
+what are these skills?
+
+317
+00:15:38.970 --> 00:15:41.490
+Okay, there seems to be like
+six skills that we should --
+
+318
+00:15:41.490 --> 00:15:45.960
+we keep constantly adding to
+this, so keep an eye out, right?
+
+319
+00:15:45.960 --> 00:15:48.960
+There are these two make skills
+which are really interesting.
+
+320
+00:15:48.960 --> 00:15:50.940
+The other skills are
+kind of piecemeal.
+
+321
+00:15:50.940 --> 00:15:53.340
+You can just do the setup
+while you get an identity
+
+322
+00:15:53.340 --> 00:15:54.540
+for your agent.
+
+323
+00:15:54.540 --> 00:15:56.640
+You can just instrument
+observability
+
+324
+00:15:56.640 --> 00:15:58.950
+which lets your agent
+submit telemetry.
+
+325
+00:15:58.950 --> 00:16:01.950
+You can also optionally
+add like Work IQ servers.
+
+326
+00:16:01.950 --> 00:16:04.710
+What this lets you do is
+have your agent in track
+
+327
+00:16:04.710 --> 00:16:06.690
+with your productivity surface,
+
+328
+00:16:06.690 --> 00:16:09.840
+like your agent can create
+a document, your agent can
+
+329
+00:16:09.840 --> 00:16:14.010
+like have its own calendar
+that it accesses and so on.
+
+330
+00:16:14.010 --> 00:16:15.180
+You can test locally.
+
+331
+00:16:15.180 --> 00:16:17.850
+But the part that I'm going
+to show you for the rest
+
+332
+00:16:17.850 --> 00:16:21.780
+of this demo is going to be how
+we make this agent essentially
+
+333
+00:16:21.780 --> 00:16:23.340
+an employee in
+your organization,
+
+334
+00:16:23.340 --> 00:16:26.250
+have its own user identity
+like Kendra talked about.
+
+335
+00:16:26.250 --> 00:16:28.470
+With that, let's take a look.
+
+336
+00:16:28.470 --> 00:16:29.520
+Now, the skill starts
+
+337
+00:16:29.520 --> 00:16:31.710
+out by determining what
+your agent stack is,
+
+338
+00:16:31.710 --> 00:16:34.020
+you don't provide much of
+an input, except starting
+
+339
+00:16:34.020 --> 00:16:36.090
+from your agent
+folder and saying,
+
+340
+00:16:36.090 --> 00:16:38.610
+"Make this agent
+ready for Agent 365."
+
+341
+00:16:38.610 --> 00:16:41.010
+We determined that this
+is your stack, Node.js,
+
+342
+00:16:41.010 --> 00:16:42.300
+LangChain, looks great.
+
+343
+00:16:42.300 --> 00:16:43.980
+It is a TypeScript agent.
+
+344
+00:16:43.980 --> 00:16:45.870
+It even determines -- because
+this is a coding agent
+
+345
+00:16:45.870 --> 00:16:49.200
+and it has access to your code,
+it knows what it does, right,
+
+346
+00:16:49.200 --> 00:16:50.460
+but then it determines, "Oh,
+
+347
+00:16:50.460 --> 00:16:52.920
+this is first time
+you're running this."
+
+348
+00:16:52.920 --> 00:16:55.230
+I'm going to scroll a little
+bit just because this a lot
+
+349
+00:16:55.230 --> 00:16:57.960
+of like coding agent
+output, so bear with me.
+
+350
+00:16:57.960 --> 00:17:00.870
+And the first thing we check
+for is prerequisites, right,
+
+351
+00:17:00.870 --> 00:17:03.000
+we have all done
+this in the past.
+
+352
+00:17:03.000 --> 00:17:06.000
+There's a package, you need
+to download the package,
+
+353
+00:17:06.000 --> 00:17:08.130
+all the dependencies,
+have your machine set
+
+354
+00:17:08.130 --> 00:17:10.110
+up exactly, right, good to go.
+
+355
+00:17:10.110 --> 00:17:10.530
+It's good.
+
+356
+00:17:10.530 --> 00:17:14.190
+Looks like some developers
+updated our Agent 365 CLI
+
+357
+00:17:14.190 --> 00:17:17.370
+so my coding agent picked
+the latest version here.
+
+358
+00:17:17.370 --> 00:17:19.230
+And this is my
+account, this is --
+
+359
+00:17:19.230 --> 00:17:21.510
+I've already logged
+into Azure CLI.
+
+360
+00:17:21.510 --> 00:17:24.600
+This is the target tenant to
+which your agent is going
+
+361
+00:17:24.600 --> 00:17:26.700
+to be enabled for Agent 365.
+
+362
+00:17:26.700 --> 00:17:28.320
+Great, all this looks great.
+
+363
+00:17:28.320 --> 00:17:30.570
+The coding agent has come
+up with a detailed plan
+
+364
+00:17:30.570 --> 00:17:32.160
+on what it needs to do.
+
+365
+00:17:32.160 --> 00:17:33.600
+So let's see what it does.
+
+366
+00:17:33.600 --> 00:17:37.170
+Okay, it says it needs to
+install required agent packages.
+
+367
+00:17:37.170 --> 00:17:39.840
+It's going to add a validate
+build and then it's going
+
+368
+00:17:39.840 --> 00:17:43.050
+to add observability Work IQ,
+register, publish, and deploy.
+
+369
+00:17:43.050 --> 00:17:44.550
+That looks pretty good to me,
+
+370
+00:17:44.550 --> 00:17:47.910
+so let's see what it
+ended up doing, right?
+
+371
+00:17:47.910 --> 00:17:49.980
+This ran for about
+10-ish minutes
+
+372
+00:17:49.980 --> 00:17:53.610
+when I ran it outside
+of this demo.
+
+373
+00:17:53.610 --> 00:17:58.730
+And at the end, I had like a
+fully-extended Agent 365 agent.
+
+374
+00:17:58.730 --> 00:17:59.900
+It's ready to go.
+
+375
+00:17:59.900 --> 00:18:01.520
+Of course, I mean as a
+developer you're going
+
+376
+00:18:01.520 --> 00:18:03.500
+to test this locally, you're
+going to make some tweaks,
+
+377
+00:18:03.500 --> 00:18:05.700
+because nothing is perfect.
+
+378
+00:18:05.700 --> 00:18:07.500
+But you see all the
+steps that it did.
+
+379
+00:18:07.500 --> 00:18:09.870
+It created a blueprint,
+which is what Kendra was
+
+380
+00:18:09.870 --> 00:18:11.160
+introducing earlier.
+
+381
+00:18:11.160 --> 00:18:13.380
+The actual agent
+identity gets created
+
+382
+00:18:13.380 --> 00:18:16.080
+when your agent gets
+activated by your admin
+
+383
+00:18:16.080 --> 00:18:17.880
+in Microsoft admin center.
+
+384
+00:18:17.880 --> 00:18:22.140
+It configured the
+observability Work IQ.
+
+385
+00:18:22.140 --> 00:18:24.510
+I made a choice that I
+want Word and OneDrive,
+
+386
+00:18:24.510 --> 00:18:27.420
+so it configured those
+MCP servers for me,
+
+387
+00:18:27.420 --> 00:18:29.370
+and does the
+manifest, good to go.
+
+388
+00:18:29.370 --> 00:18:32.640
+Now, I would hand this
+off to my admin and say, "Okay,
+
+389
+00:18:32.640 --> 00:18:35.400
+I want this agent
+ready in this tenant.
+
+390
+00:18:35.400 --> 00:18:38.850
+You choose whether this agent is
+shared with a subset of users
+
+391
+00:18:38.850 --> 00:18:43.680
+or all users, and you
+assign," and at that point,
+
+392
+00:18:43.680 --> 00:18:45.300
+your agent is ready to go.
+
+393
+00:18:45.300 --> 00:18:48.510
+Now, I'm shifting
+personas a little,
+
+394
+00:18:48.510 --> 00:18:51.600
+so now I am an
+agent user, right?
+
+395
+00:18:51.600 --> 00:18:52.650
+This is my tenant.
+
+396
+00:18:52.650 --> 00:18:56.430
+I am using Teams within my
+tenant, and I can go to the list
+
+397
+00:18:56.430 --> 00:19:00.780
+of facts available and I
+can create an instance.
+
+398
+00:19:00.780 --> 00:19:05.280
+This is what creates my
+own version of this agent,
+
+399
+00:19:05.280 --> 00:19:08.730
+which is reporting
+up to me, right?
+
+400
+00:19:08.730 --> 00:19:11.550
+So you would have seen agents
+being used from Teams before,
+
+401
+00:19:11.550 --> 00:19:14.010
+and this agent can be
+used from Teams as well.
+
+402
+00:19:14.010 --> 00:19:17.370
+Let me just copy over my prompt
+
+403
+00:19:17.370 --> 00:19:19.500
+so you can see what
+I'm trying to do.
+
+404
+00:19:19.500 --> 00:19:22.080
+And remember when I asked you to
+plan a trip right after Build
+
+405
+00:19:22.080 --> 00:19:25.020
+for me to Austin, now
+I'm doing this here
+
+406
+00:19:25.020 --> 00:19:27.290
+from within Teams, right?
+
+407
+00:19:27.290 --> 00:19:29.780
+I'll scroll up so you don't need
+to keep waiting for the agent
+
+408
+00:19:29.780 --> 00:19:32.150
+to reply, but I'll also
+show you its reply.
+
+409
+00:19:32.150 --> 00:19:35.300
+I've intentionally asked this
+agent to provide a response
+
+410
+00:19:35.300 --> 00:19:37.610
+and also create a
+Word document for me.
+
+411
+00:19:37.610 --> 00:19:38.990
+And that's because I want
+
+412
+00:19:38.990 --> 00:19:41.420
+to show you how I can
+interact with this agent.
+
+413
+00:19:41.420 --> 00:19:43.520
+You all interact with
+your colleagues,
+
+414
+00:19:43.520 --> 00:19:46.850
+you don't always interact with
+them just over Teams or email.
+
+415
+00:19:46.850 --> 00:19:49.040
+Sometimes you're working
+collaborating on a document
+
+416
+00:19:49.040 --> 00:19:52.070
+and you @mention your colleague,
+because that's just contextual,
+
+417
+00:19:52.070 --> 00:19:53.900
+it will be kind of you
+have to switch to Teams
+
+418
+00:19:53.900 --> 00:19:57.950
+and ask your teammate
+how to (inaudible).
+
+419
+00:19:57.950 --> 00:19:59.990
+So here, okay, this
+looks pretty good.
+
+420
+00:19:59.990 --> 00:20:02.730
+I'll probably take
+this out first.
+
+421
+00:20:03.810 --> 00:20:05.640
+And maybe the Marriott
+looks very good.
+
+422
+00:20:05.640 --> 00:20:08.220
+And there are some restaurants
+which look interesting.
+
+423
+00:20:08.220 --> 00:20:10.590
+So yeah, I got almost
+the same reply.
+
+424
+00:20:10.590 --> 00:20:14.550
+And it has created an editable
+Word document for us to work on.
+
+425
+00:20:14.550 --> 00:20:17.370
+So let me switch over
+to the Word document.
+
+426
+00:20:17.370 --> 00:20:19.200
+Now, as you see, I've interacted
+
+427
+00:20:19.200 --> 00:20:21.180
+with this agent a
+few times before.
+
+428
+00:20:21.180 --> 00:20:26.550
+But the cool thing is now I can
+say, "Build demo travel agent."
+
+429
+00:20:26.550 --> 00:20:28.140
+This is the agent
+that I just hired.
+
+430
+00:20:28.140 --> 00:20:30.990
+I'm @mentioning it just
+like I would an employee
+
+431
+00:20:30.990 --> 00:20:34.680
+or someone else in your
+organization, and I can say,
+
+432
+00:20:34.680 --> 00:20:43.650
+"Can I get some coffee
+places as well, please?"
+
+433
+00:20:43.650 --> 00:20:45.930
+It's going to take a few
+minutes, because remember,
+
+434
+00:20:45.930 --> 00:20:49.140
+as part of like setting up
+your agent for Agent 365,
+
+435
+00:20:49.140 --> 00:20:50.670
+one of the important
+parts that we set
+
+436
+00:20:50.670 --> 00:20:53.550
+up was we created an
+endpoint for your agent.
+
+437
+00:20:53.550 --> 00:20:56.400
+Your agent is now able to
+respond to notifications,
+
+438
+00:20:56.400 --> 00:21:01.170
+not just over Teams but over
+@mentions from Word documents,
+
+439
+00:21:01.170 --> 00:21:03.300
+emails that you can
+send to your agent.
+
+440
+00:21:03.300 --> 00:21:05.310
+So as part of running
+through the skill
+
+441
+00:21:05.310 --> 00:21:07.980
+that I showed you before,
+your agent is ready.
+
+442
+00:21:07.980 --> 00:21:09.690
+Now, this agent can
+be hosted anywhere.
+
+443
+00:21:09.690 --> 00:21:12.120
+For test purposes we
+hosted this in Azure,
+
+444
+00:21:12.120 --> 00:21:16.200
+but this LangChain agent could
+be in GCP, it could be in AWS,
+
+445
+00:21:16.200 --> 00:21:18.420
+it could be in your cloud
+provider of choice.
+
+446
+00:21:18.420 --> 00:21:19.890
+It does not matter.
+
+447
+00:21:19.890 --> 00:21:23.190
+Right, while this is happening,
+my agent will respond here
+
+448
+00:21:23.190 --> 00:21:26.340
+when it's ready, but we can also
+look through our comments here.
+
+449
+00:21:26.340 --> 00:21:30.300
+I had asked for a good Italian
+place and it said, "Okay,
+
+450
+00:21:30.300 --> 00:21:33.600
+try Loro because it's
+popular, with excellent food
+
+451
+00:21:33.600 --> 00:21:34.830
+and a nice atmosphere."
+
+452
+00:21:34.830 --> 00:21:37.080
+Great, I'm going to try that
+as well as this coffee place
+
+453
+00:21:37.080 --> 00:21:38.840
+that I had asked for before.
+
+454
+00:21:38.840 --> 00:21:41.900
+Now, I asked -- Kendra
+talked about observability,
+
+455
+00:21:41.900 --> 00:21:44.480
+and we wired up for
+agent for observability.
+
+456
+00:21:44.480 --> 00:21:47.840
+But where exactly does this
+observability get used?
+
+457
+00:21:47.840 --> 00:21:50.490
+Now, observability is kind
+of an interesting thing.
+
+458
+00:21:50.490 --> 00:21:52.470
+Developers want to know what
+their agents are up to,
+
+459
+00:21:52.470 --> 00:21:55.320
+who uses your agents, but
+it's also interesting
+
+460
+00:21:55.320 --> 00:21:56.100
+from an end user.
+
+461
+00:21:56.100 --> 00:21:58.320
+Because this is my
+employee, right,
+
+462
+00:21:58.320 --> 00:22:00.510
+I want to know how
+my interaction
+
+463
+00:22:00.510 --> 00:22:02.430
+with this agent was now.
+
+464
+00:22:02.430 --> 00:22:04.860
+So you can see that there are
+chats which happened today
+
+465
+00:22:04.860 --> 00:22:06.270
+when I was testing my agent.
+
+466
+00:22:06.270 --> 00:22:08.580
+Right, if I refresh it you
+will also see the recent chat
+
+467
+00:22:08.580 --> 00:22:09.240
+show up.
+
+468
+00:22:09.240 --> 00:22:11.100
+There were a couple
+of failures as well
+
+469
+00:22:11.100 --> 00:22:13.320
+when the agent did not
+carry out what I wanted,
+
+470
+00:22:13.320 --> 00:22:15.990
+so even if an end user I
+kind of get visibility
+
+471
+00:22:15.990 --> 00:22:19.920
+on what my agent was up to, what
+was the prompt that I gave it,
+
+472
+00:22:19.920 --> 00:22:22.350
+did it carry out the
+task that it needed?
+
+473
+00:22:22.350 --> 00:22:25.380
+That is great, so developers
+have observability
+
+474
+00:22:25.380 --> 00:22:27.630
+and users can use
+this observability.
+
+475
+00:22:27.630 --> 00:22:31.560
+But then remember your IT
+admins definitely want
+
+476
+00:22:31.560 --> 00:22:32.910
+to know what your
+agent is up to.
+
+477
+00:22:32.910 --> 00:22:35.520
+I just want to go a
+couple of lines back.
+
+478
+00:22:35.520 --> 00:22:37.920
+Now, remember the blueprint
+Kendra was talking about,
+
+479
+00:22:37.920 --> 00:22:39.780
+this is the blueprint right here
+
+480
+00:22:39.780 --> 00:22:42.510
+and there are multiple
+instances of your blueprint.
+
+481
+00:22:42.510 --> 00:22:46.080
+Right, different people could
+essentially have your agent
+
+482
+00:22:46.080 --> 00:22:46.860
+reporting to them.
+
+483
+00:22:46.860 --> 00:22:49.950
+In this case there is some
+of my colleagues, Pujon,
+
+484
+00:22:49.950 --> 00:22:51.810
+still has multiple
+instances of this agent.
+
+485
+00:22:51.810 --> 00:22:53.430
+And this one is mine.
+
+486
+00:22:53.430 --> 00:22:55.890
+So let's see, as an
+admin I can see activity
+
+487
+00:22:55.890 --> 00:22:57.960
+across all the instances.
+
+488
+00:22:57.960 --> 00:22:59.250
+But in this case, it looks
+
+489
+00:22:59.250 --> 00:23:00.810
+like Aarthi is using
+this agent a lot,
+
+490
+00:23:00.810 --> 00:23:03.330
+so let's see what it's up to.
+
+491
+00:23:03.330 --> 00:23:06.780
+I can see both the activity
+view here, as well as exactly
+
+492
+00:23:06.780 --> 00:23:09.480
+who are the users of
+this agent right here.
+
+493
+00:23:09.480 --> 00:23:14.880
+Now, to recap, I started with
+a basic Langchain agent,
+
+494
+00:23:14.880 --> 00:23:17.790
+written in node.JS, which I'm
+going to host in Azure.
+
+495
+00:23:17.790 --> 00:23:19.860
+Does not matter where I host it.
+
+496
+00:23:19.860 --> 00:23:23.970
+Right, I use Skills to get this
+agent ready for Agent 365,
+
+497
+00:23:23.970 --> 00:23:29.790
+hard configurations for Entra
+while blueprint was creating
+
+498
+00:23:29.790 --> 00:23:32.250
+configurations for
+observability where we wired
+
+499
+00:23:32.250 --> 00:23:34.290
+up open telemetry
+for your agent.
+
+500
+00:23:34.290 --> 00:23:37.350
+I optionally chose Word
+and OneDrive MCP servers
+
+501
+00:23:37.350 --> 00:23:39.570
+because that's where the
+document was created.
+
+502
+00:23:39.570 --> 00:23:42.390
+I also had this agent
+set up for notifications
+
+503
+00:23:42.390 --> 00:23:45.120
+so that the agent can get
+messages over Teams as well
+
+504
+00:23:45.120 --> 00:23:48.630
+as notifications when it's
+@mentioned in comments.
+
+505
+00:23:48.630 --> 00:23:51.480
+With that, like your agent
+is ready, it's configured,
+
+506
+00:23:51.480 --> 00:23:52.950
+it's ready in your tenant for --
+
+507
+00:23:52.950 --> 00:23:56.160
+and ready to unlock all
+the features of Agent 365
+
+508
+00:23:56.160 --> 00:23:58.600
+that Kendra will
+show you in detail.
+
+509
+00:24:00.520 --> 00:24:06.870
+[ Applause ]
+
+510
+00:24:06.870 --> 00:24:09.030
+Kendra Springer: Awesome.
+Thank you so much, Aarthi.
+
+511
+00:24:09.030 --> 00:24:11.040
+Okay, that was a great demo.
+
+512
+00:24:11.040 --> 00:24:12.510
+But that was a long demo.
+
+513
+00:24:12.510 --> 00:24:16.140
+So just to reiterate, everything
+that we saw here, right,
+
+514
+00:24:16.140 --> 00:24:18.990
+she started out with that
+LangChain agent, she was able
+
+515
+00:24:18.990 --> 00:24:21.510
+to fully onboard
+it with our SDK.
+
+516
+00:24:21.510 --> 00:24:24.510
+So she did things like give
+it that agent identity.
+
+517
+00:24:24.510 --> 00:24:27.060
+She enabled full observability.
+
+518
+00:24:27.060 --> 00:24:30.960
+She also took advantage
+of our tools capabilities
+
+519
+00:24:30.960 --> 00:24:33.900
+and leveraged some
+of the MCPs, right?
+
+520
+00:24:33.900 --> 00:24:37.320
+And then she pivoted to show
+you the end user experience,
+
+521
+00:24:37.320 --> 00:24:41.100
+how she was able to hire that
+agent instance and leverage
+
+522
+00:24:41.100 --> 00:24:44.670
+that agent instance to plan her
+next trip, and then collaborate
+
+523
+00:24:44.670 --> 00:24:46.980
+with that agent,
+go back and forth,
+
+524
+00:24:46.980 --> 00:24:50.280
+just like she would any
+other employee, to find
+
+525
+00:24:50.280 --> 00:24:52.230
+and track additional things.
+
+526
+00:24:52.230 --> 00:24:55.680
+And then she was also able
+to access that activity
+
+527
+00:24:55.680 --> 00:24:59.640
+and observe that agent and every
+step that it took, right?
+
+528
+00:24:59.640 --> 00:25:01.170
+Really powerful.
+
+529
+00:25:01.170 --> 00:25:02.430
+Thank you so much.
+
+530
+00:25:02.430 --> 00:25:03.960
+Great demo.
+
+531
+00:25:03.960 --> 00:25:10.380
+Now, let's switch gears
+here and show you what
+
+532
+00:25:10.380 --> 00:25:15.550
+that experience is, if I log in.
+
+533
+00:25:26.550 --> 00:25:27.450
+Tech Support?
+
+534
+00:25:27.450 --> 00:25:29.340
+Oh, there we go, wrong button.
+
+535
+00:25:29.340 --> 00:25:31.500
+Okay, here we go.
+
+536
+00:25:31.500 --> 00:25:35.520
+So let's take a look at the
+admin experience inside
+
+537
+00:25:35.520 --> 00:25:38.640
+of Microsoft 365
+admin center, right?
+
+538
+00:25:38.640 --> 00:25:43.170
+So this is where you're going to
+see full observability of all
+
+539
+00:25:43.170 --> 00:25:45.870
+of your agents
+across your tenant.
+
+540
+00:25:45.870 --> 00:25:49.170
+One thing we are working on
+is multitenant capabilities.
+
+541
+00:25:49.170 --> 00:25:52.650
+Today you'll see all of your
+agents in a single tenant.
+
+542
+00:25:52.650 --> 00:25:57.300
+Here in the "Overview" page,
+you see high-level analytics
+
+543
+00:25:57.300 --> 00:26:01.440
+around total number of agents,
+total number of users.
+
+544
+00:26:01.440 --> 00:26:04.140
+These are your employee
+-- human employee users,
+
+545
+00:26:04.140 --> 00:26:06.150
+not your agentic users.
+
+546
+00:26:06.150 --> 00:26:09.660
+You also see total
+runtime hours as well,
+
+547
+00:26:09.660 --> 00:26:11.400
+and then we have
+our registry sync.
+
+548
+00:26:11.400 --> 00:26:13.530
+I'm going to come back here.
+
+549
+00:26:13.530 --> 00:26:17.460
+Down below here, you also
+have your calls to action.
+
+550
+00:26:17.460 --> 00:26:20.850
+Right, so showing you
+analytics and data is great,
+
+551
+00:26:20.850 --> 00:26:24.780
+but also where do you need
+to lean in, take some action
+
+552
+00:26:24.780 --> 00:26:26.790
+to resolve some of the issues?
+
+553
+00:26:26.790 --> 00:26:29.550
+You have those pending
+requests for your agents here,
+
+554
+00:26:29.550 --> 00:26:31.200
+similar to what
+Aarthi was talking
+
+555
+00:26:31.200 --> 00:26:34.440
+about where we were approving
+her agent instance.
+
+556
+00:26:34.440 --> 00:26:35.910
+We'll take you through that.
+
+557
+00:26:35.910 --> 00:26:39.990
+Also identifying anywhere where
+agent risks have been seen.
+
+558
+00:26:39.990 --> 00:26:43.020
+Agents without owners,
+this is a big one, right,
+
+559
+00:26:43.020 --> 00:26:46.710
+making sure that your agent
+sprawl stays under control
+
+560
+00:26:46.710 --> 00:26:49.740
+and your agent ecosystem
+has good hygiene.
+
+561
+00:26:49.740 --> 00:26:51.840
+And then any agents
+with exceptions.
+
+562
+00:26:51.840 --> 00:26:54.960
+Now, exceptions are anytime
+where there's an error
+
+563
+00:26:54.960 --> 00:26:56.760
+in your agent runtime,
+this is going
+
+564
+00:26:56.760 --> 00:26:59.400
+to surface as an exception.
+
+565
+00:26:59.400 --> 00:27:02.220
+Down below you have some
+more granular analytics.
+
+566
+00:27:02.220 --> 00:27:06.030
+So you can see how many agents
+were built by your organization
+
+567
+00:27:06.030 --> 00:27:09.750
+versus how many agents were
+built by third-party providers,
+
+568
+00:27:09.750 --> 00:27:12.090
+and of course, how many
+agents you're leveraging
+
+569
+00:27:12.090 --> 00:27:14.640
+from across Microsoft.
+
+570
+00:27:14.640 --> 00:27:18.510
+You also see your top platforms
+that your agents are built on,
+
+571
+00:27:18.510 --> 00:27:21.510
+right, so you can
+understand which teams,
+
+572
+00:27:21.510 --> 00:27:24.780
+which platforms are most
+heavily being used.
+
+573
+00:27:24.780 --> 00:27:27.840
+You can see your agent
+adoption over time.
+
+574
+00:27:27.840 --> 00:27:30.810
+This can be really valuable
+if you're working on any sort
+
+575
+00:27:30.810 --> 00:27:35.400
+of adoption campaigns, if
+you're releasing any big
+
+576
+00:27:35.400 --> 00:27:38.130
+highly-anticipated agents
+like an IT support
+
+577
+00:27:38.130 --> 00:27:39.900
+or a benefits agent, right?
+
+578
+00:27:39.900 --> 00:27:43.140
+And then you also can see
+your trending agents.
+
+579
+00:27:43.140 --> 00:27:45.390
+So these are the agents that
+are being using heavily
+
+580
+00:27:45.390 --> 00:27:47.430
+across your organization.
+
+581
+00:27:47.430 --> 00:27:51.750
+Now, if we go into the agent
+registry, this is where --
+
+582
+00:27:51.750 --> 00:27:54.900
+let me close this,
+zoom in a tiny bit.
+
+583
+00:27:54.900 --> 00:28:01.050
+This is where you're going to be
+able to see all of your agents
+
+584
+00:28:01.050 --> 00:28:03.540
+across all of those
+different platforms, right?
+
+585
+00:28:03.540 --> 00:28:05.550
+So you'll notice
+as I'm scrolling,
+
+586
+00:28:05.550 --> 00:28:07.290
+these are not just
+Microsoft agents.
+
+587
+00:28:07.290 --> 00:28:09.780
+We have Workday in
+here, we have some
+
+588
+00:28:09.780 --> 00:28:12.840
+of our partner agents,
+Genspark, right?
+
+589
+00:28:12.840 --> 00:28:18.690
+And you can customize and slice
+and dice this list as needed,
+
+590
+00:28:18.690 --> 00:28:21.960
+right, so that you can more
+successfully manage this large
+
+591
+00:28:21.960 --> 00:28:23.400
+number of agents.
+
+592
+00:28:23.400 --> 00:28:25.620
+Now, if I go into
+an agent itself --
+
+593
+00:28:25.620 --> 00:28:28.200
+here I am in my Zava
+Procurement Agent,
+
+594
+00:28:28.200 --> 00:28:30.930
+I'm able to see really
+valuable agent metadata.
+
+595
+00:28:30.930 --> 00:28:35.220
+So I know exactly what this
+agent does, I see metadata
+
+596
+00:28:35.220 --> 00:28:39.360
+around when it was published,
+when it was last updated.
+
+597
+00:28:39.360 --> 00:28:41.700
+You see the
+publisher, the owner.
+
+598
+00:28:41.700 --> 00:28:44.040
+You see that agent ID, right?
+
+599
+00:28:44.040 --> 00:28:48.000
+But really valuable here, you
+also see the agent instructions
+
+600
+00:28:48.000 --> 00:28:52.290
+so that you can see exactly
+what that agent is doing,
+
+601
+00:28:52.290 --> 00:28:54.630
+what the purpose
+of that agent is,
+
+602
+00:28:54.630 --> 00:28:58.440
+and then you also see the full
+identity history for this agent,
+
+603
+00:28:58.440 --> 00:29:01.920
+so not only the Bot ID, but
+you see that Blueprint ID.
+
+604
+00:29:01.920 --> 00:29:05.220
+You also see the Entra
+agent ID as well.
+
+605
+00:29:05.220 --> 00:29:08.310
+If this was a Copilot Studio
+agent, you would see all
+
+606
+00:29:08.310 --> 00:29:10.560
+of the environment details here,
+
+607
+00:29:10.560 --> 00:29:13.680
+but because it's a Foundry
+agent, we're going to go ahead
+
+608
+00:29:13.680 --> 00:29:18.150
+and see all of those platform
+details and be able to link
+
+609
+00:29:18.150 --> 00:29:21.540
+out directly to
+that agent itself.
+
+610
+00:29:21.540 --> 00:29:22.950
+But I can see more here.
+
+611
+00:29:22.950 --> 00:29:28.260
+I can also see all of the users
+that this agent is shared with.
+
+612
+00:29:28.260 --> 00:29:32.310
+I'm going to come back to data
+and tools, so pause on that one.
+
+613
+00:29:32.310 --> 00:29:34.290
+But from a security perspective,
+
+614
+00:29:34.290 --> 00:29:36.720
+you can also see all
+the different policies
+
+615
+00:29:36.720 --> 00:29:39.960
+that have been applied
+to this agent during
+
+616
+00:29:39.960 --> 00:29:42.120
+that onboarding or
+approval process.
+
+617
+00:29:42.120 --> 00:29:45.960
+And I can drill into purview
+or Entra to learn more
+
+618
+00:29:45.960 --> 00:29:47.880
+and investigate further.
+
+619
+00:29:47.880 --> 00:29:49.080
+Along with that, I see all
+
+620
+00:29:49.080 --> 00:29:51.540
+of the permissions
+that this agent has.
+
+621
+00:29:51.540 --> 00:29:53.910
+And then, for me, one of
+my favorite features,
+
+622
+00:29:53.910 --> 00:29:56.460
+because I come from the
+agent building space,
+
+623
+00:29:56.460 --> 00:30:00.240
+I love that we now have a
+unified view into the activity
+
+624
+00:30:00.240 --> 00:30:02.310
+across all agent types.
+
+625
+00:30:02.310 --> 00:30:07.050
+So now you know total users,
+total sessions, exceptions,
+
+626
+00:30:07.050 --> 00:30:09.240
+you know your runtime hours.
+
+627
+00:30:09.240 --> 00:30:12.690
+You can also track
+successful sessions, right,
+
+628
+00:30:12.690 --> 00:30:15.810
+so that you know how your agent
+is performing, how it's able
+
+629
+00:30:15.810 --> 00:30:19.440
+to support your users, and
+you can also monitor any
+
+630
+00:30:19.440 --> 00:30:22.440
+of those errors or
+exceptions, look for spikes
+
+631
+00:30:22.440 --> 00:30:25.860
+in those exceptions, and
+then lean in if necessary.
+
+632
+00:30:25.860 --> 00:30:29.340
+And then down below, you're
+going to see all of the users
+
+633
+00:30:29.340 --> 00:30:31.650
+that are driving
+traffic to your agent.
+
+634
+00:30:31.650 --> 00:30:33.330
+You understand their
+total sessions,
+
+635
+00:30:33.330 --> 00:30:37.530
+their last activity date, and
+all of those different pieces.
+
+636
+00:30:37.530 --> 00:30:40.110
+Now, this is a list
+view and that's great.
+
+637
+00:30:40.110 --> 00:30:43.710
+We also give you a more
+visual representation, right,
+
+638
+00:30:43.710 --> 00:30:49.470
+so you can understand where
+your agents are working
+
+639
+00:30:49.470 --> 00:30:50.910
+with other agents.
+
+640
+00:30:50.910 --> 00:30:51.840
+They're aggregated
+
+641
+00:30:51.840 --> 00:30:54.420
+by the platforms these
+agents are built on.
+
+642
+00:30:54.420 --> 00:30:56.670
+And if you hover
+over your agents
+
+643
+00:30:56.670 --> 00:31:01.200
+where there are multiagent
+solutions, you're able to see
+
+644
+00:31:01.200 --> 00:31:03.090
+which agents these
+are leveraging --
+
+645
+00:31:03.090 --> 00:31:05.760
+let me zoom out so you can
+see that a little bit easier,
+
+646
+00:31:05.760 --> 00:31:08.520
+even across different
+platforms, right?
+
+647
+00:31:08.520 --> 00:31:11.550
+And if you want to drill in and
+see more details and you want
+
+648
+00:31:11.550 --> 00:31:14.250
+to see a list view of
+these connected platforms,
+
+649
+00:31:14.250 --> 00:31:16.020
+you also have that here.
+
+650
+00:31:16.020 --> 00:31:17.760
+So I can see all of the agents
+
+651
+00:31:17.760 --> 00:31:19.950
+that my researcher
+agent is using,
+
+652
+00:31:19.950 --> 00:31:22.950
+whether they're all available or
+whether one's blocked, right,
+
+653
+00:31:22.950 --> 00:31:26.370
+so really valuable
+information not only
+
+654
+00:31:26.370 --> 00:31:30.330
+to understand
+different combinations
+
+655
+00:31:30.330 --> 00:31:32.610
+and different dependencies
+that your agents have,
+
+656
+00:31:32.610 --> 00:31:35.250
+but if you need to lean
+in and block an agent,
+
+657
+00:31:35.250 --> 00:31:36.780
+you want to know
+the blast radius.
+
+658
+00:31:36.780 --> 00:31:39.930
+If I block this agent, what
+else does it break, right?
+
+659
+00:31:39.930 --> 00:31:43.560
+So all this information
+can be found here.
+
+660
+00:31:43.560 --> 00:31:47.340
+Now, if I come back to my
+registry, I want to go ahead
+
+661
+00:31:47.340 --> 00:31:49.890
+and drill into agents
+that have risks.
+
+662
+00:31:49.890 --> 00:31:53.880
+So here if I click on the risks
+themselves, we take you directly
+
+663
+00:31:53.880 --> 00:31:58.200
+to the agent and we show you
+the source of the risks.
+
+664
+00:31:58.200 --> 00:32:01.200
+If I had more time,
+maybe another session,
+
+665
+00:32:01.200 --> 00:32:05.370
+I would go ahead and drill into
+Entra or drill into Purview,
+
+666
+00:32:05.370 --> 00:32:09.180
+so you can see just how
+granularly you can see these
+
+667
+00:32:09.180 --> 00:32:11.340
+incidents, what caused them.
+
+668
+00:32:11.340 --> 00:32:14.880
+In Purview, again, you have
+full access to those logs
+
+669
+00:32:14.880 --> 00:32:18.150
+and you're actually able to
+get down to the document layer
+
+670
+00:32:18.150 --> 00:32:21.780
+or the data source layer that
+was trying to be accessed
+
+671
+00:32:21.780 --> 00:32:25.230
+that actually initiated this
+risk that was blocked, right?
+
+672
+00:32:25.230 --> 00:32:28.830
+And here what I can do, I can
+go ahead and block this agent
+
+673
+00:32:28.830 --> 00:32:32.040
+and then I can work with
+my SecOPs team to go
+
+674
+00:32:32.040 --> 00:32:34.110
+and do some additional
+investigation
+
+675
+00:32:34.110 --> 00:32:36.930
+and additional mitigation.
+
+676
+00:32:36.930 --> 00:32:39.660
+Now, moving into
+agents without owners,
+
+677
+00:32:39.660 --> 00:32:43.290
+I'm able to easily
+reassign an owner, right?
+
+678
+00:32:43.290 --> 00:32:45.600
+I can go ahead and
+say, "Hey, Aarthi,
+
+679
+00:32:45.600 --> 00:32:48.240
+I'm going to give you a bit
+more work and I'm going
+
+680
+00:32:48.240 --> 00:32:50.880
+to make you the owner
+of this agent."
+
+681
+00:32:50.880 --> 00:32:55.080
+But as you can see here, this
+process is pretty manual, right?
+
+682
+00:32:55.080 --> 00:32:58.950
+So it would be great to have
+a way to automate this.
+
+683
+00:32:58.950 --> 00:33:01.140
+That's where rules come in.
+
+684
+00:33:01.140 --> 00:33:06.330
+So rules inside of Agent 365
+give you a very simple way
+
+685
+00:33:06.330 --> 00:33:09.660
+to set up automation
+for some of these kind
+
+686
+00:33:09.660 --> 00:33:12.690
+of lifecycle management
+actions across your agent.
+
+687
+00:33:12.690 --> 00:33:16.200
+So you can do things like
+bulk agent reassignment,
+
+688
+00:33:16.200 --> 00:33:19.890
+when an individual
+leaves an organization,
+
+689
+00:33:19.890 --> 00:33:21.840
+for those agent
+built-in agent builder,
+
+690
+00:33:21.840 --> 00:33:24.240
+automatically reassign
+it to their manager.
+
+691
+00:33:24.240 --> 00:33:27.960
+You also can do things like
+where risk is identified,
+
+692
+00:33:27.960 --> 00:33:29.880
+automatically block
+that agent, right?
+
+693
+00:33:29.880 --> 00:33:32.160
+So you don't actually
+have to come in here
+
+694
+00:33:32.160 --> 00:33:34.110
+and manually block it yourself.
+
+695
+00:33:34.110 --> 00:33:37.620
+We are investing heavily in
+risk to make this as scalable
+
+696
+00:33:37.620 --> 00:33:41.400
+and as easy as possible and give
+you more and more functionality
+
+697
+00:33:41.400 --> 00:33:44.430
+over the next
+couple of quarters.
+
+698
+00:33:44.430 --> 00:33:47.700
+The other piece I want to show
+you here within "Settings,"
+
+699
+00:33:47.700 --> 00:33:50.400
+if we come back
+here, are templates.
+
+700
+00:33:50.400 --> 00:33:54.390
+Now, templates I would say
+is one of our hero features.
+
+701
+00:33:54.390 --> 00:33:56.760
+What templates do is
+they aggregate all
+
+702
+00:33:56.760 --> 00:34:02.070
+of those custom policies from
+across Entra, Defender, Purview,
+
+703
+00:34:02.070 --> 00:34:06.090
+and even SharePoint, into
+one reusable template
+
+704
+00:34:06.090 --> 00:34:09.030
+that then you can apply to
+your agents in a consistent
+
+705
+00:34:09.030 --> 00:34:10.890
+and comprehensive way.
+
+706
+00:34:10.890 --> 00:34:13.020
+And so if go into
+this template --
+
+707
+00:34:13.020 --> 00:34:14.820
+this is a custom one
+that I've created.
+
+708
+00:34:14.820 --> 00:34:16.020
+We have default ones.
+
+709
+00:34:16.020 --> 00:34:18.180
+You can easily create another.
+
+710
+00:34:18.180 --> 00:34:20.250
+But you'll see here
+-- and I'll zoom in,
+
+711
+00:34:20.250 --> 00:34:23.400
+it's probably quite little in
+the back, I've set up things
+
+712
+00:34:23.400 --> 00:34:25.050
+like different access packages.
+
+713
+00:34:25.050 --> 00:34:27.180
+And I have a number of
+different access packages
+
+714
+00:34:27.180 --> 00:34:29.400
+that I can select from.
+
+715
+00:34:29.400 --> 00:34:32.100
+I also have conditional access.
+
+716
+00:34:32.100 --> 00:34:36.150
+I also have a myriad of
+different options down below
+
+717
+00:34:36.150 --> 00:34:39.180
+that are kind of our
+default policies as well,
+
+718
+00:34:39.180 --> 00:34:41.040
+things like DLP protection,
+
+719
+00:34:41.040 --> 00:34:44.340
+lifecycle management
+protections, et cetera.
+
+720
+00:34:44.340 --> 00:34:49.560
+So I can go ahead now that
+I've created this agent
+
+721
+00:34:49.560 --> 00:34:54.150
+and I will leverage it as a part
+of that agent approval flow
+
+722
+00:34:54.150 --> 00:34:56.370
+that Aarthi was mentioning.
+
+723
+00:34:56.370 --> 00:34:58.850
+So here I have a staffing agent.
+
+724
+00:34:58.850 --> 00:35:03.110
+I want to publish this agent
+across my organization.
+
+725
+00:35:03.110 --> 00:35:07.190
+Now, before I do this, my IT
+admin team needs to approve this
+
+726
+00:35:07.190 --> 00:35:09.470
+and apply the
+appropriate template.
+
+727
+00:35:09.470 --> 00:35:12.510
+This is where I'm going to
+come back to data and tools.
+
+728
+00:35:12.510 --> 00:35:16.520
+As you can see here, in order to
+make the most informed decision,
+
+729
+00:35:16.520 --> 00:35:19.310
+you want to know what your
+agent is made of, right,
+
+730
+00:35:19.310 --> 00:35:20.930
+what data does it
+have access to,
+
+731
+00:35:20.930 --> 00:35:23.150
+what tools does it
+have access to?
+
+732
+00:35:23.150 --> 00:35:26.030
+This is really where you
+understand the risk level
+
+733
+00:35:26.030 --> 00:35:27.900
+of this agent, right?
+
+734
+00:35:27.900 --> 00:35:29.520
+And so here I can go ahead
+
+735
+00:35:29.520 --> 00:35:32.400
+and kick off the publish
+flow for this agent.
+
+736
+00:35:32.400 --> 00:35:35.280
+I can select the users
+that have access to it.
+
+737
+00:35:35.280 --> 00:35:37.560
+I can preinstall
+it for all users
+
+738
+00:35:37.560 --> 00:35:40.430
+or just make it
+discoverable in the store.
+
+739
+00:35:40.430 --> 00:35:42.920
+And then now the magic happens.
+
+740
+00:35:42.920 --> 00:35:44.900
+We start with a
+default template,
+
+741
+00:35:44.900 --> 00:35:49.190
+because we believe baseline all
+agents should have some level
+
+742
+00:35:49.190 --> 00:35:51.030
+of protections, right?
+
+743
+00:35:51.030 --> 00:35:54.120
+But I want to go ahead and
+use that DevOps template
+
+744
+00:35:54.120 --> 00:35:57.600
+that I created custom for
+this particular agent.
+
+745
+00:35:57.600 --> 00:36:00.210
+You'll see here all of
+those policies that you saw
+
+746
+00:36:00.210 --> 00:36:03.060
+in templates are
+now being applied,
+
+747
+00:36:03.060 --> 00:36:05.280
+and also the appropriate
+permissions.
+
+748
+00:36:05.280 --> 00:36:06.930
+I can go ahead and look through,
+
+749
+00:36:06.930 --> 00:36:09.450
+review those permissions,
+approve them.
+
+750
+00:36:09.450 --> 00:36:13.500
+And now this agent is
+available for my organization.
+
+751
+00:36:13.500 --> 00:36:15.210
+If I had more time,
+I could take you
+
+752
+00:36:15.210 --> 00:36:17.370
+through that agent
+instance flow as well
+
+753
+00:36:17.370 --> 00:36:19.230
+that Aarthi was mentioning.
+
+754
+00:36:19.230 --> 00:36:23.700
+But where I really want to leave
+off here I'm going to come back
+
+755
+00:36:23.700 --> 00:36:27.120
+to the registry and
+I want to show you
+
+756
+00:36:27.120 --> 00:36:29.340
+that registry sync capability.
+
+757
+00:36:29.340 --> 00:36:31.320
+Let me make sure
+I'm right on time.
+
+758
+00:36:31.320 --> 00:36:34.470
+Okay. Registry sync,
+again, is that ability
+
+759
+00:36:34.470 --> 00:36:37.680
+to ingest those agents from some
+
+760
+00:36:37.680 --> 00:36:42.060
+of your common third-party
+platforms, like Amazon Bedrock,
+
+761
+00:36:42.060 --> 00:36:43.680
+Google Vertex AI, right?
+
+762
+00:36:43.680 --> 00:36:48.150
+So here I've configured my
+access to those platforms.
+
+763
+00:36:48.150 --> 00:36:49.860
+And if I click into Google,
+
+764
+00:36:49.860 --> 00:36:53.220
+I can see that I
+have one agent here.
+
+765
+00:36:53.220 --> 00:36:55.200
+And you'll see here
+-- I can't see all
+
+766
+00:36:55.200 --> 00:36:57.480
+of the observability
+data that I put --
+
+767
+00:36:57.480 --> 00:37:02.220
+had it onboarded this agent with
+the SDK, but I'm at least aware
+
+768
+00:37:02.220 --> 00:37:06.090
+of all of the agents that I have
+deployed across this platform.
+
+769
+00:37:06.090 --> 00:37:09.450
+And because in Google,
+I also have permissions
+
+770
+00:37:09.450 --> 00:37:13.500
+to delete agents, you'll notice
+that I also have that permission
+
+771
+00:37:13.500 --> 00:37:18.270
+to delete this agent if
+I wanted to as well.
+
+772
+00:37:18.270 --> 00:37:20.850
+Now, there's so much more here.
+
+773
+00:37:20.850 --> 00:37:23.370
+We allow you to identify
+
+774
+00:37:23.370 --> 00:37:26.490
+and bring shadow agents
+under management.
+
+775
+00:37:26.490 --> 00:37:31.590
+We're expanding this outside of
+OpenClaude to leverage Defender
+
+776
+00:37:31.590 --> 00:37:38.130
+to identify 22 plus, give or
+take, additional local platforms
+
+777
+00:37:38.130 --> 00:37:40.170
+so that you can either
+block or bring those
+
+778
+00:37:40.170 --> 00:37:41.760
+under management, right?
+
+779
+00:37:41.760 --> 00:37:44.370
+We also allow you to
+govern and manage all
+
+780
+00:37:44.370 --> 00:37:45.960
+of your tools right here.
+
+781
+00:37:45.960 --> 00:37:50.190
+But I'm getting the speed-up
+signal, so I'm going
+
+782
+00:37:50.190 --> 00:37:54.180
+to I'm going to go back to my
+PowerPoint and finish out here
+
+783
+00:37:54.180 --> 00:37:56.610
+with some really
+exciting details
+
+784
+00:37:56.610 --> 00:37:58.770
+around customer momentum.
+
+785
+00:37:58.770 --> 00:38:02.700
+So as you can see here,
+we have a ton of value,
+
+786
+00:38:02.700 --> 00:38:06.750
+and we have really
+enjoyed getting to work
+
+787
+00:38:06.750 --> 00:38:08.550
+with some early adopters.
+
+788
+00:38:08.550 --> 00:38:12.330
+Once such adopter is EY.
+
+789
+00:38:12.330 --> 00:38:17.670
+So with EY, they have found that
+for mission-critical agents,
+
+790
+00:38:17.670 --> 00:38:21.960
+Agent 365 is really key,
+right, it gives them the trust
+
+791
+00:38:21.960 --> 00:38:25.380
+to be able to unlock these
+agents and to feel good
+
+792
+00:38:25.380 --> 00:38:28.320
+about leveraging them
+across the organization.
+
+793
+00:38:28.320 --> 00:38:30.150
+The next is Genspark.
+
+794
+00:38:30.150 --> 00:38:32.580
+And lucky enough, I don't
+have to speak for them
+
+795
+00:38:32.580 --> 00:38:36.180
+because we have Ray here to come
+up on stage and tell us all
+
+796
+00:38:36.180 --> 00:38:42.060
+about our partnership and what
+they've done with Agent 365.
+
+797
+00:38:42.060 --> 00:38:42.930
+Thank you so much, Ray.
+
+798
+00:38:42.930 --> 00:38:45.140
+Ray Zhong: Thanks.
+Thank you.
+
+799
+00:38:45.140 --> 00:38:49.220
+Ah, good morning, everyone, I'm
+Ray, Cofounder of Genspark.
+
+800
+00:38:49.220 --> 00:38:53.930
+And I'm very pleased to be on
+the stage and happy to share
+
+801
+00:38:53.930 --> 00:38:58.560
+with you guys of how Genspark
+integrated with Agent 365.
+
+802
+00:38:58.560 --> 00:39:04.560
+So Genspark is a
+unified AI workspace
+
+803
+00:39:04.560 --> 00:39:07.860
+for the knowledge people
+and when we have more
+
+804
+00:39:07.860 --> 00:39:11.580
+than 2,000 organizations that's
+already registered Genspark
+
+805
+00:39:11.580 --> 00:39:15.990
+as their daily work shoes.
+
+806
+00:39:15.990 --> 00:39:20.550
+So when combined with
+Agent 365, magic happens.
+
+807
+00:39:20.550 --> 00:39:25.620
+So when we are served
+from the modern jobs,
+
+808
+00:39:25.620 --> 00:39:28.830
+we found that there are
+kinds of type of jobs.
+
+809
+00:39:28.830 --> 00:39:32.460
+For example, Sara from the
+Finance department, they --
+
+810
+00:39:32.460 --> 00:39:37.590
+she needs to Q3 the
+board's deck by Friday.
+
+811
+00:39:37.590 --> 00:39:41.490
+So she needs to do some
+summarizing, make some slides.
+
+812
+00:39:41.490 --> 00:39:49.110
+And Tom, he has more than 200
+megabytes of the CSV to run
+
+813
+00:39:49.110 --> 00:39:53.070
+over some -- to meet
+some powerful compute,
+
+814
+00:39:53.070 --> 00:39:57.390
+to do some calculations
+and summarizations.
+
+815
+00:39:57.390 --> 00:40:01.640
+So those two kinds of work
+need two kinds of AIs.
+
+816
+00:40:01.640 --> 00:40:06.560
+For Sara, maybe she just
+needs some simple AI tools,
+
+817
+00:40:06.560 --> 00:40:08.390
+just like chat-based tools.
+
+818
+00:40:08.390 --> 00:40:13.340
+But for Tom, he needs
+dedicated virtual machines.
+
+819
+00:40:13.340 --> 00:40:19.590
+With Agent 365, it actually
+provides developers
+
+820
+00:40:19.590 --> 00:40:24.990
+like us the full flexibility to
+combine with the different types
+
+821
+00:40:24.990 --> 00:40:31.110
+of the AI backend structure
+to integrate with Agent 365.
+
+822
+00:40:31.110 --> 00:40:38.040
+So to me, Agent 365 it actually
+has a free primitives platforms.
+
+823
+00:40:38.040 --> 00:40:43.110
+One is the identity with the
+federal identity credentials.
+
+824
+00:40:43.110 --> 00:40:49.380
+The second one is the
+unified UI -- UX interface.
+
+825
+00:40:49.380 --> 00:40:55.920
+For example, like all the
+Microsoft 365 software switch,
+
+826
+00:40:55.920 --> 00:41:00.840
+for example, Teams, Outlooks,
+Word documents, Word etcetera.
+
+827
+00:41:00.840 --> 00:41:05.310
+And the third is the
+observability, Purview, Audit,
+
+828
+00:41:05.310 --> 00:41:09.270
+and plus all the
+lifecycle management.
+
+829
+00:41:09.270 --> 00:41:13.290
+Key is the architects
+how Genspark integrates
+
+830
+00:41:13.290 --> 00:41:18.690
+with Agent 365 and build
+on top of Agent 365.
+
+831
+00:41:18.690 --> 00:41:24.180
+So at the top level, there is
+Microsoft Suite, which has --
+
+832
+00:41:24.180 --> 00:41:29.280
+is Teams, Outlook,
+and Word structure.
+
+833
+00:41:29.280 --> 00:41:31.800
+And the middle layer
+is a very thin layer
+
+834
+00:41:31.800 --> 00:41:38.730
+which we integrated the
+Python SDK from Agent 365,
+
+835
+00:41:38.730 --> 00:41:44.610
+which provides us the identity
+streaming MCP to course
+
+836
+00:41:44.610 --> 00:41:47.820
+over Microsoft software.
+
+837
+00:41:47.820 --> 00:41:51.480
+And the third one is the
+observability, purview,
+
+838
+00:41:51.480 --> 00:41:54.150
+and the lifecycle management.
+
+839
+00:41:54.150 --> 00:41:59.340
+Under the hood the third layer
+is actually the flexible backend
+
+840
+00:41:59.340 --> 00:42:00.720
+we provided.
+
+841
+00:42:00.720 --> 00:42:03.630
+For example, the
+lightweight AI tools,
+
+842
+00:42:03.630 --> 00:42:06.810
+Genspark chat-based AI tools,
+
+843
+00:42:06.810 --> 00:42:11.670
+and the heavy-weighted
+compute resources
+
+844
+00:42:11.670 --> 00:42:16.620
+like Genspark Claude dedicated
+VM provided with them.
+
+845
+00:42:16.620 --> 00:42:23.730
+And here's how we
+integrate Agent 365.
+
+846
+00:42:23.730 --> 00:42:27.660
+For example, for the
+identity, we just --
+
+847
+00:42:27.660 --> 00:42:33.660
+we authenticate each
+request from Teams
+
+848
+00:42:33.660 --> 00:42:36.150
+and through our backends.
+
+849
+00:42:36.150 --> 00:42:40.740
+We do not just do the single
+authentication at the beginning,
+
+850
+00:42:40.740 --> 00:42:43.620
+we just -- we authenticate
+every message
+
+851
+00:42:43.620 --> 00:42:46.920
+so that we can
+ensure the security.
+
+852
+00:42:46.920 --> 00:42:51.150
+For example, someone from the
+Teams group chat mentioned your
+
+853
+00:42:51.150 --> 00:42:56.660
+agent to asking for some private
+message from your agent.
+
+854
+00:42:56.660 --> 00:43:00.080
+And the agent can themselves
+at that message and at
+
+855
+00:43:00.080 --> 00:43:04.100
+that session can
+reauthenticate that it --
+
+856
+00:43:04.100 --> 00:43:08.100
+for that user is not
+from your agency
+
+857
+00:43:08.100 --> 00:43:10.740
+and we just refuse that request.
+
+858
+00:43:10.740 --> 00:43:14.010
+So with Agent 365,
+we do not need
+
+859
+00:43:14.010 --> 00:43:19.080
+to build another authentication
+layer, we just reuse all
+
+860
+00:43:19.080 --> 00:43:23.990
+of the capability
+provided by Microsoft.
+
+861
+00:43:23.990 --> 00:43:25.610
+And the second one is the MCP,
+
+862
+00:43:25.610 --> 00:43:28.940
+which is the greater things
+we experience a lot.
+
+863
+00:43:28.940 --> 00:43:35.600
+And because Agent 365 has
+already provided powerful MCPs,
+
+864
+00:43:35.600 --> 00:43:43.620
+for example, connected with
+PowerPoints, Outlook, or Word,
+
+865
+00:43:43.620 --> 00:43:48.180
+for example, and then each
+request comes through Genspark
+
+866
+00:43:48.180 --> 00:43:51.600
+so we can just -- we can
+generate that our PowerPoints
+
+867
+00:43:51.600 --> 00:43:54.750
+on the fly to a Word document
+on the fly, and why bear
+
+868
+00:43:54.750 --> 00:43:59.910
+into the user's or the agent's
+OneDrive using the MCP?
+
+869
+00:43:59.910 --> 00:44:03.720
+In that way, we don't need to
+build another storage layer
+
+870
+00:44:03.720 --> 00:44:07.050
+for the -- for our users.
+
+871
+00:44:07.050 --> 00:44:11.640
+And the third one, the
+last, not the least,
+
+872
+00:44:11.640 --> 00:44:15.810
+is the most amazing part
+that Microsoft provides,
+
+873
+00:44:15.810 --> 00:44:20.820
+is the observability, and the
+secure, and the governance.
+
+874
+00:44:20.820 --> 00:44:27.390
+So for the observability, every
+agency locations, inference,
+
+875
+00:44:27.390 --> 00:44:31.320
+and all the activities
+that are already locked
+
+876
+00:44:31.320 --> 00:44:38.040
+into Microsoft Purview so
+that the tenant's admin
+
+877
+00:44:38.040 --> 00:44:42.810
+in the dashboard, they can
+monitor all the activities
+
+878
+00:44:42.810 --> 00:44:47.670
+and -- but it's used in a
+single and unified place
+
+879
+00:44:47.670 --> 00:44:53.310
+for the IT manager to
+observe all the activities
+
+880
+00:44:53.310 --> 00:44:54.750
+of the agents.
+
+881
+00:44:54.750 --> 00:45:00.450
+And for the Purview, because
+the agent has its own unified
+
+882
+00:45:00.450 --> 00:45:04.860
+identity and all the Purview
+policies have been already
+
+883
+00:45:04.860 --> 00:45:08.460
+implemented in the enterprise
+you automatically apply
+
+884
+00:45:08.460 --> 00:45:13.800
+to the agents so that
+the sensitive label
+
+885
+00:45:13.800 --> 00:45:18.360
+on the Word document, we
+also apply for the agents
+
+886
+00:45:18.360 --> 00:45:20.910
+so that the agents when
+the agents comment
+
+887
+00:45:20.910 --> 00:45:25.950
+or leak something,
+sensitive information
+
+888
+00:45:25.950 --> 00:45:29.280
+and the Purview policy can
+automatically block them.
+
+889
+00:45:29.280 --> 00:45:31.680
+We don't need to
+implement another layer
+
+890
+00:45:31.680 --> 00:45:37.650
+of the security layer ourselves.
+
+891
+00:45:37.650 --> 00:45:41.700
+And of course, all the
+agents have their logs --
+
+892
+00:45:41.700 --> 00:45:47.490
+have unified their logs inside
+using the same Microsoft API
+
+893
+00:45:47.490 --> 00:45:52.170
+so that the IT manager can use
+the same SQL purview to purview
+
+894
+00:45:52.170 --> 00:45:55.740
+and analysis the agents'
+activities logs,
+
+895
+00:45:55.740 --> 00:45:58.590
+combines all those things.
+
+896
+00:45:58.590 --> 00:46:03.540
+Agent 365 actually provides
+the stability for the users
+
+897
+00:46:03.540 --> 00:46:05.850
+so that the users can
+choose different kinds
+
+898
+00:46:05.850 --> 00:46:09.060
+of the agent backends,
+for example,
+
+899
+00:46:09.060 --> 00:46:11.460
+chat-based to authenticate VMs.
+
+900
+00:46:11.460 --> 00:46:15.450
+And for the IT manager
+inside the enterprise,
+
+901
+00:46:15.450 --> 00:46:18.570
+it still has the control
+for the enterprise,
+
+902
+00:46:18.570 --> 00:46:20.880
+because all the activities,
+
+903
+00:46:20.880 --> 00:46:26.100
+all the agents' logs have
+already been built on top
+
+904
+00:46:26.100 --> 00:46:29.040
+of Microsoft provided APIs.
+
+905
+00:46:29.040 --> 00:46:31.800
+And the manager, the IT manager
+
+906
+00:46:31.800 --> 00:46:37.380
+in the enterprise can use the
+same existing tools to monitor,
+
+907
+00:46:37.380 --> 00:46:41.610
+observe, and audit all
+the logs and activities.
+
+908
+00:46:41.610 --> 00:46:47.220
+That makes the partnership of
+Genspark and Agent 365 great
+
+909
+00:46:47.220 --> 00:46:50.340
+and our customers, enterprise
+customers love this switch
+
+910
+00:46:50.340 --> 00:46:52.350
+a lot.
+
+911
+00:46:52.350 --> 00:46:54.520
+For that, I'll
+come back to Neta.
+
+912
+00:46:54.520 --> 00:46:57.920
+[ Applause ]
+
+913
+00:46:57.920 --> 00:46:58.610
+Neta Haiby: Thank
+you, everybody,
+
+914
+00:46:58.610 --> 00:47:00.110
+and I'll close us off.
+
+915
+00:47:00.110 --> 00:47:02.930
+You saw how you can build
+enterprise-ready agents
+
+916
+00:47:02.930 --> 00:47:06.750
+with Microsoft Agent 365 with
+the -- how to integrate the SDK,
+
+917
+00:47:06.750 --> 00:47:09.150
+how to observe, and secure,
+and govern your agents.
+
+918
+00:47:09.150 --> 00:47:11.880
+We have some resources for
+you here, how to get started,
+
+919
+00:47:11.880 --> 00:47:15.390
+how to get started with the SDK,
+and the recently-released blog.
+
+920
+00:47:15.390 --> 00:47:17.700
+I hope you enjoyed our session,
+and thank you, everybody,
+
+921
+00:47:17.700 --> 00:47:19.510
+have a wonderful day today.
+
+922
+00:47:19.510 --> 00:47:22.510
+[ Music ]
